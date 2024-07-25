@@ -29,8 +29,8 @@ def funcao():
 print("Hello World")
 ```
 
-<a name="secao-5"></a>
-## Seção 5: Tabelas
+<h1 name="secao-5" style="color:blue">Seção 5: Tabelas</h1>
+
 | Nome  | Idade |
 |-------|-------|
 | Alice | 30    |
