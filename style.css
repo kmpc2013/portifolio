@@ -1,36 +1,38 @@
 .skills {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .skills_skill {
-    padding: 0.5rem 1rem;
-    margin-bottom: 0.8rem;
-    margin-right: 0.8rem;
-    font-size: 0.8rem;
-    background: rgba(153, 153, 153, 0.2);
-    border-radius: 5px;
-    font-weight: 600;
-    color: #666;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.8rem;
+  margin-right: 0.8rem;
+  font-size: 0.8rem;
+  background: rgba(153, 153, 153, 0.2);
+  border-radius: 5px;
+  font-weight: 600;
+  color: #666;
 }
 
 video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
 }
 
-.button-primary, .button-primary:active {
-    background-color: #1f8d9e !important;
-    border-color: #1f8d9e !important;
-    color: #ffffff !important;
-    box-shadow: none;
-    &:hover {
-        background-color: rgb(82, 179, 194) !important;
-        border-color: rgb(82, 179, 194) !important;
-    }
+.btn-contato {
+  padding-left: 140px;
+}
+@media (max-width: 991px) {
+  .btn-contato {
+    padding-left: 0px;
+  }
+}
+
+.container-about {
+    flex-direction: row !important;
 }
