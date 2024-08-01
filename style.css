@@ -27,3 +27,22 @@ video {
 .container-about {
     flex-direction: row !important;
 }
+
+.img-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dica-img-right {
+  height: auto;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 4px 18px rgba(0, 0, 0.2, 0.4);
+  }
+}
+
+.em-breve {
+  color: #ffffff;
+  padding-top: 30px;
+  padding-right: 15px;
+}

@@ -1881,13 +1881,78 @@ a {
     text-align: center;
   }
 }
+.cid-uk9bBVfs2s {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #ffffff;
+}
+.cid-uk9bBVfs2s .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-uk9bBVfs2s .item-wrapper img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50% !important;
+}
+.cid-uk9bBVfs2s .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-uk9bBVfs2s .item-wrapper {
+  background: var(--primary-01-A);
+  margin-bottom: 0.5rem;
+  padding: 2.25rem;
+  height: 100%;
+}
+@media (max-width: 767px) {
+  .cid-uk9bBVfs2s .item-wrapper {
+    padding: 2rem 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .cid-uk9bBVfs2s .item-wrapper {
+    padding: 2rem 1.5rem;
+  }
+}
+.cid-uk9bBVfs2s .card-title,
+.cid-uk9bBVfs2s .iconfont-wrapper {
+  color: #ffffff;
+}
+.cid-uk9bBVfs2s .card-text {
+  color: #ffffff;
+}
+.cid-uk9bBVfs2s .content-head {
+  max-width: 800px;
+}
+.cid-uk9bBVfs2s .mbr-section-title {
+  color: #000000;
+}
+.cid-uk9bBVfs2s .item-mb {
+  margin-bottom: 2rem;
+}
+@media (max-width: 767px) {
+  .cid-uk9bBVfs2s .item-mb {
+    margin-bottom: 1rem;
+  }
+}
+.cid-uk9bBVfs2s .mbr-section-subtitle {
+  color: #000000;
+}
 .cid-tLdYHD757A ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 .cid-tJS9NNcTLZ {
-  padding-top: 1rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   background-color: var(--primary-01-A);
 }
 @media (max-width: 991px) {
