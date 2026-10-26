@@ -1,0 +1,92 @@
+.lista {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--cor-borda);
+}
+
+/* Celular: período e empresa em cima, cargo e conquistas embaixo */
+.item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 16px;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--cor-borda);
+  transition: padding 0.3s;
+}
+
+.data {
+  font-family: var(--fonte-mono);
+  font-size: 0.75rem;
+  color: var(--cor-destaque);
+}
+
+.origem {
+  font-family: var(--fonte-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--cor-texto-suave);
+  text-align: right;
+}
+
+.titulo {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.conquistas {
+  grid-column: 1 / -1;
+  margin: 8px 0 0;
+  padding-left: 1.2em;
+  color: var(--cor-texto-suave);
+}
+
+.conquistas li::marker {
+  color: var(--cor-destaque);
+}
+
+.item:hover {
+  padding-left: 10px;
+}
+
+.item:hover .titulo {
+  color: var(--cor-destaque);
+}
+
+/* Desktop: período numa coluna fixa à esquerda, o resto ao lado */
+@media (min-width: 900px) {
+  .item {
+    grid-template-columns: 12em 1fr auto;
+    align-items: baseline;
+  }
+
+  .data {
+    grid-row: 1 / span 2;
+  }
+
+  .titulo {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .origem {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .conquistas {
+    grid-column: 2 / -1;
+    grid-row: 2;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .item {
+    transition: none;
+  }
+}

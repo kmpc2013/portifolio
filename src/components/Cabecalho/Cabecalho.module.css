@@ -1,0 +1,154 @@
+.cabecalho {
+  /* Fixo e por cima do hero: não empurra a primeira tela para baixo */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  height: var(--altura-header);
+  font-family: var(--fonte-mono);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  /* Degradê em vez de faixa sólida: o conteúdo some suavemente por baixo */
+  background: linear-gradient(to bottom, rgba(7, 9, 11, 0.96) 0%, rgba(7, 9, 11, 0.85) 60%, rgba(7, 9, 11, 0) 100%);
+}
+
+.conteudo {
+  max-width: var(--largura-max);
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 var(--respiro);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  position: relative;
+  z-index: 2;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--cor-texto);
+  text-decoration: none;
+  letter-spacing: 0;
+}
+
+.cursorPiscando {
+  color: var(--cor-destaque);
+  animation: piscar 1s steps(1) infinite;
+}
+
+@keyframes piscar {
+  50% {
+    opacity: 0;
+  }
+}
+
+.botaoMenu {
+  display: none;
+  position: relative;
+  z-index: 2;
+  font: inherit;
+  letter-spacing: inherit;
+  color: var(--cor-fundo);
+  background: var(--cor-destaque);
+  border: 0;
+  padding: 0 16px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  gap: 4px;
+}
+
+.menu a {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  color: var(--cor-texto-suave);
+  text-decoration: none;
+  padding: 8px 10px;
+  transition: color 0.2s;
+}
+
+.numero {
+  font-size: 0.65rem;
+  color: var(--cor-texto-suave);
+  opacity: 0.6;
+}
+
+.menu a:hover {
+  color: var(--cor-texto);
+}
+
+/* Link da seção visível no momento: texto claro e um ponto verde de "online" */
+.menu a.ativo {
+  color: var(--cor-texto);
+}
+
+.menu a.ativo .numero {
+  color: var(--cor-destaque);
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursorPiscando {
+    animation: none;
+  }
+}
+
+/* Celular: o menu vira uma tela cheia com links gigantes */
+@media (max-width: 720px) {
+  .botaoMenu {
+    display: block;
+  }
+
+  .comMenu {
+    background: var(--cor-fundo);
+  }
+
+  .menu {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+    padding: var(--altura-header) var(--respiro) 32px;
+    background: var(--cor-fundo);
+    /* Fechado: recortado para fora da tela. Aberto: a cortina desce. */
+    clip-path: inset(0 0 100% 0);
+    visibility: hidden;
+    transition:
+      clip-path 0.5s cubic-bezier(0.7, 0, 0.2, 1),
+      visibility 0s 0.5s;
+  }
+
+  .menu.aberto {
+    clip-path: inset(0 0 0 0);
+    visibility: visible;
+    transition: clip-path 0.5s cubic-bezier(0.7, 0, 0.2, 1);
+  }
+
+  .menu a {
+    font-family: var(--fonte-display);
+    font-size: clamp(2.2rem, 11vw, 3.5rem);
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--cor-borda);
+  }
+
+  .numero {
+    font-family: var(--fonte-mono);
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    min-width: 2.5em;
+  }
+}

@@ -1,0 +1,100 @@
+/* Único CSS global: variáveis de tema, reset e utilitários. O resto fica em CSS Modules. */
+:root {
+  /* Paleta "sala de controle": quase preto + um único verde de status OK */
+  --cor-fundo: #07090b;
+  --cor-superficie: #0d1114;
+  --cor-borda: #1c2226;
+  --cor-texto: #e8ede6;
+  --cor-texto-suave: #7d8781;
+  --cor-destaque: #c6ff3d;
+  --cor-erro: #ff5d5d;
+  --cor-sucesso: #c6ff3d;
+
+  --fonte-display: 'Bricolage Grotesque Variable', 'Segoe UI', system-ui, sans-serif;
+  --fonte-mono: 'JetBrains Mono Variable', 'Cascadia Code', Consolas, monospace;
+
+  --largura-max: 1320px;
+  /* Margem lateral fluida: 16px no celular, até 48px em telas largas */
+  --respiro: clamp(16px, 4vw, 48px);
+  /* Altura do cabeçalho fixo: usada para o rolar não esconder o título da seção */
+  --altura-header: 64px;
+
+  font-family: var(--fonte-display);
+  color: var(--cor-texto);
+  background: var(--cor-fundo);
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  /* Clicar num link #secao rola suavemente em vez de pular */
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  line-height: 1.6;
+  background: var(--cor-fundo);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Granulado de filme por cima de tudo: um SVG de ruído fixo e quase transparente */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  pointer-events: none;
+  opacity: 0.06;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: var(--cor-destaque);
+  color: var(--cor-fundo);
+}
+
+/* Toda seção com id fica abaixo do cabeçalho fixo ao ser alcançada por âncora */
+section[id] {
+  scroll-margin-top: var(--altura-header);
+}
+
+/* Foco visível para quem navega pelo teclado */
+:focus-visible {
+  outline: 2px solid var(--cor-destaque);
+  outline-offset: 4px;
+}
+
+/* Esconde da tela, mas mantém para leitores de tela */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

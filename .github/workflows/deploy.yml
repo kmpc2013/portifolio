@@ -1,0 +1,51 @@
+# Publica o portfólio no GitHub Pages a cada push na main (ou manualmente pela aba Actions).
+name: Deploy no GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Permissões mínimas que o deploy do Pages precisa
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Um deploy por vez: se chegar um push novo, o deploy em andamento termina antes
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+      - run: npm run lint
+      # Teste quebrado interrompe o job: nada é publicado
+      - run: npm test
+
+      # O Pages serve o site em /<nome-do-repositório>/, então o Vite precisa gerar os caminhos com esse prefixo
+      - run: npm run build -- --base=/${{ github.event.repository.name }}/
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

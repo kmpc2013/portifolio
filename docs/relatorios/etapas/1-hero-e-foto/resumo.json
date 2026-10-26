@@ -1,0 +1,1340 @@
+{
+  "rotulo": "etapa1",
+  "url": "http://localhost:3010/",
+  "lighthouse": "lighthouse@13.5.0",
+  "data": "2026-10-25T20:03:47.778Z",
+  "resultados": {
+    "mobile": [
+      {
+        "arquivo": "docs\\relatorios\\etapas\\1-hero-e-foto\\etapa1-mobile-1.report.html",
+        "performance": 81,
+        "acessibilidade": 96,
+        "boasPraticas": 100,
+        "seo": 100,
+        "fcp": 3104.30995,
+        "lcp": 3821.5939999999996,
+        "tbt": 129.5,
+        "cls": 0.0003853281522551595,
+        "si": 3104.30995,
+        "pesoKB": 383.53515625,
+        "requisicoes": 12,
+        "trabalhoJsMs": 814.3359999999911,
+        "elementoLcp": "<p class=\"_resumo_1g594_201\">",
+        "fasesLcp": [
+          {
+            "fase": "Time to first byte",
+            "ms": 11.98
+          },
+          {
+            "fase": "Element render delay",
+            "ms": 541.571
+          }
+        ],
+        "listaRequisicoes": [
+          {
+            "url": "http://localhost:3010/",
+            "tipo": "Document",
+            "kb": 1.193359375,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=JetBrains+Mono:wght@400;500;700&display=swap",
+            "tipo": "Stylesheet",
+            "kb": 1.302734375,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/index-iO55UTZ_.js",
+            "tipo": "Script",
+            "kb": 193.86328125,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/index-CB8bIbgw.css",
+            "tipo": "Stylesheet",
+            "kb": 5.4990234375,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter i…",
+            "tipo": "Image",
+            "kb": 0,
+            "prioridade": "Low"
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGIInHWVyNJ.woff2",
+            "tipo": "Font",
+            "kb": 75.1025390625,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/hero-poster-DxnjO1_a.webp",
+            "tipo": "Image",
+            "kb": 33.9248046875,
+            "prioridade": "High"
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwgknk-4.woff2",
+            "tipo": "Font",
+            "kb": 30.6337890625,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/foto-perfil-tKIsezCZ.webp",
+            "tipo": "Image",
+            "kb": 37.7275390625,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/assets/loki-DucbXBFU.svg",
+            "tipo": "Image",
+            "kb": 1.2666015625,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/assets/aiops-CXMR3Tlj.svg",
+            "tipo": "Image",
+            "kb": 1.3251953125,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/favicon.svg",
+            "tipo": "Other",
+            "kb": 1.6962890625,
+            "prioridade": "High"
+          }
+        ],
+        "reprovadas": [
+          {
+            "categoria": "performance",
+            "id": "first-contentful-paint",
+            "titulo": "First Contentful Paint",
+            "valor": "3.1 s"
+          },
+          {
+            "categoria": "performance",
+            "id": "largest-contentful-paint",
+            "titulo": "Largest Contentful Paint",
+            "valor": "3.8 s"
+          },
+          {
+            "categoria": "performance",
+            "id": "cache-insight",
+            "titulo": "Use efficient cache lifetimes",
+            "valor": "Est savings of 274 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "forced-reflow-insight",
+            "titulo": "Forced reflow",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "image-delivery-insight",
+            "titulo": "Improve image delivery",
+            "valor": "Est savings of 21 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "network-dependency-tree-insight",
+            "titulo": "Network dependency tree",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "render-blocking-insight",
+            "titulo": "Render-blocking requests",
+            "valor": "Est savings of 1,290 ms"
+          },
+          {
+            "categoria": "performance",
+            "id": "interactive",
+            "titulo": "Time to Interactive",
+            "valor": "4.0 s"
+          },
+          {
+            "categoria": "performance",
+            "id": "max-potential-fid",
+            "titulo": "Max Potential First Input Delay",
+            "valor": "300 ms"
+          },
+          {
+            "categoria": "performance",
+            "id": "unused-javascript",
+            "titulo": "Reduce unused JavaScript",
+            "valor": "Est savings of 83 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "mainthread-work-breakdown",
+            "titulo": "Minimize main-thread work",
+            "valor": "2.9 s"
+          },
+          {
+            "categoria": "accessibility",
+            "id": "color-contrast",
+            "titulo": "Background and foreground colors do not have a sufficient contrast ratio.",
+            "valor": ""
+          }
+        ],
+        "navegador": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+        "versao": "13.5.0"
+      },
+      {
+        "arquivo": "docs\\relatorios\\etapas\\1-hero-e-foto\\etapa1-mobile-2.report.html",
+        "performance": 83,
+        "acessibilidade": 96,
+        "boasPraticas": 100,
+        "seo": 100,
+        "fcp": 2261.9029,
+        "lcp": 3822.613,
+        "tbt": 200.4210999999998,
+        "cls": 0.0003853281522551595,
+        "si": 2303.0878665530754,
+        "pesoKB": 383.53515625,
+        "requisicoes": 12,
+        "trabalhoJsMs": 949.3039999999919,
+        "elementoLcp": "<p class=\"_resumo_1g594_201\">",
+        "fasesLcp": [
+          {
+            "fase": "Time to first byte",
+            "ms": 9.647999877929687
+          },
+          {
+            "fase": "Element render delay",
+            "ms": 589.9440001220703
+          }
+        ],
+        "listaRequisicoes": [
+          {
+            "url": "http://localhost:3010/",
+            "tipo": "Document",
+            "kb": 1.193359375,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=JetBrains+Mono:wght@400;500;700&display=swap",
+            "tipo": "Stylesheet",
+            "kb": 1.302734375,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/index-iO55UTZ_.js",
+            "tipo": "Script",
+            "kb": 193.86328125,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/index-CB8bIbgw.css",
+            "tipo": "Stylesheet",
+            "kb": 5.4990234375,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter i…",
+            "tipo": "Image",
+            "kb": 0,
+            "prioridade": "Low"
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGIInHWVyNJ.woff2",
+            "tipo": "Font",
+            "kb": 75.1025390625,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/hero-poster-DxnjO1_a.webp",
+            "tipo": "Image",
+            "kb": 33.9248046875,
+            "prioridade": "High"
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwgknk-4.woff2",
+            "tipo": "Font",
+            "kb": 30.6337890625,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/foto-perfil-tKIsezCZ.webp",
+            "tipo": "Image",
+            "kb": 37.7275390625,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/assets/loki-DucbXBFU.svg",
+            "tipo": "Image",
+            "kb": 1.2666015625,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/assets/aiops-CXMR3Tlj.svg",
+            "tipo": "Image",
+            "kb": 1.3251953125,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/favicon.svg",
+            "tipo": "Other",
+            "kb": 1.6962890625,
+            "prioridade": "High"
+          }
+        ],
+        "reprovadas": [
+          {
+            "categoria": "performance",
+            "id": "first-contentful-paint",
+            "titulo": "First Contentful Paint",
+            "valor": "2.3 s"
+          },
+          {
+            "categoria": "performance",
+            "id": "largest-contentful-paint",
+            "titulo": "Largest Contentful Paint",
+            "valor": "3.8 s"
+          },
+          {
+            "categoria": "performance",
+            "id": "total-blocking-time",
+            "titulo": "Total Blocking Time",
+            "valor": "200 ms"
+          },
+          {
+            "categoria": "performance",
+            "id": "cache-insight",
+            "titulo": "Use efficient cache lifetimes",
+            "valor": "Est savings of 274 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "forced-reflow-insight",
+            "titulo": "Forced reflow",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "image-delivery-insight",
+            "titulo": "Improve image delivery",
+            "valor": "Est savings of 21 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "network-dependency-tree-insight",
+            "titulo": "Network dependency tree",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "render-blocking-insight",
+            "titulo": "Render-blocking requests",
+            "valor": "Est savings of 450 ms"
+          },
+          {
+            "categoria": "performance",
+            "id": "interactive",
+            "titulo": "Time to Interactive",
+            "valor": "4.0 s"
+          },
+          {
+            "categoria": "performance",
+            "id": "max-potential-fid",
+            "titulo": "Max Potential First Input Delay",
+            "valor": "300 ms"
+          },
+          {
+            "categoria": "performance",
+            "id": "unused-javascript",
+            "titulo": "Reduce unused JavaScript",
+            "valor": "Est savings of 83 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "mainthread-work-breakdown",
+            "titulo": "Minimize main-thread work",
+            "valor": "3.2 s"
+          },
+          {
+            "categoria": "accessibility",
+            "id": "color-contrast",
+            "titulo": "Background and foreground colors do not have a sufficient contrast ratio.",
+            "valor": ""
+          }
+        ],
+        "navegador": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+        "versao": "13.5.0"
+      },
+      {
+        "arquivo": "docs\\relatorios\\etapas\\1-hero-e-foto\\etapa1-mobile-3.report.html",
+        "performance": 87,
+        "acessibilidade": 96,
+        "boasPraticas": 100,
+        "seo": 100,
+        "fcp": 2308.8457,
+        "lcp": 3460.2532499999998,
+        "tbt": 111,
+        "cls": 0.0003853281522551595,
+        "si": 2940.0825396954774,
+        "pesoKB": 383.53515625,
+        "requisicoes": 12,
+        "trabalhoJsMs": 816.0519999999913,
+        "elementoLcp": "<p class=\"_resumo_1g594_201\">",
+        "fasesLcp": [
+          {
+            "fase": "Time to first byte",
+            "ms": 8.061999877929688
+          },
+          {
+            "fase": "Element render delay",
+            "ms": 1021.4160001220703
+          }
+        ],
+        "listaRequisicoes": [
+          {
+            "url": "http://localhost:3010/",
+            "tipo": "Document",
+            "kb": 1.193359375,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=JetBrains+Mono:wght@400;500;700&display=swap",
+            "tipo": "Stylesheet",
+            "kb": 1.302734375,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/index-iO55UTZ_.js",
+            "tipo": "Script",
+            "kb": 193.86328125,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/index-CB8bIbgw.css",
+            "tipo": "Stylesheet",
+            "kb": 5.4990234375,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter i…",
+            "tipo": "Image",
+            "kb": 0,
+            "prioridade": "Low"
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGIInHWVyNJ.woff2",
+            "tipo": "Font",
+            "kb": 75.1025390625,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/hero-poster-DxnjO1_a.webp",
+            "tipo": "Image",
+            "kb": 33.9248046875,
+            "prioridade": "High"
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwgknk-4.woff2",
+            "tipo": "Font",
+            "kb": 30.6337890625,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/foto-perfil-tKIsezCZ.webp",
+            "tipo": "Image",
+            "kb": 37.7275390625,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/assets/loki-DucbXBFU.svg",
+            "tipo": "Image",
+            "kb": 1.2666015625,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/assets/aiops-CXMR3Tlj.svg",
+            "tipo": "Image",
+            "kb": 1.3251953125,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/favicon.svg",
+            "tipo": "Other",
+            "kb": 1.6962890625,
+            "prioridade": "High"
+          }
+        ],
+        "reprovadas": [
+          {
+            "categoria": "performance",
+            "id": "first-contentful-paint",
+            "titulo": "First Contentful Paint",
+            "valor": "2.3 s"
+          },
+          {
+            "categoria": "performance",
+            "id": "largest-contentful-paint",
+            "titulo": "Largest Contentful Paint",
+            "valor": "3.5 s"
+          },
+          {
+            "categoria": "performance",
+            "id": "cache-insight",
+            "titulo": "Use efficient cache lifetimes",
+            "valor": "Est savings of 274 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "forced-reflow-insight",
+            "titulo": "Forced reflow",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "image-delivery-insight",
+            "titulo": "Improve image delivery",
+            "valor": "Est savings of 21 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "network-dependency-tree-insight",
+            "titulo": "Network dependency tree",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "render-blocking-insight",
+            "titulo": "Render-blocking requests",
+            "valor": "Est savings of 450 ms"
+          },
+          {
+            "categoria": "performance",
+            "id": "interactive",
+            "titulo": "Time to Interactive",
+            "valor": "3.9 s"
+          },
+          {
+            "categoria": "performance",
+            "id": "max-potential-fid",
+            "titulo": "Max Potential First Input Delay",
+            "valor": "260 ms"
+          },
+          {
+            "categoria": "performance",
+            "id": "unused-javascript",
+            "titulo": "Reduce unused JavaScript",
+            "valor": "Est savings of 83 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "mainthread-work-breakdown",
+            "titulo": "Minimize main-thread work",
+            "valor": "2.8 s"
+          },
+          {
+            "categoria": "accessibility",
+            "id": "color-contrast",
+            "titulo": "Background and foreground colors do not have a sufficient contrast ratio.",
+            "valor": ""
+          }
+        ],
+        "navegador": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+        "versao": "13.5.0"
+      }
+    ],
+    "desktop": [
+      {
+        "arquivo": "docs\\relatorios\\etapas\\1-hero-e-foto\\etapa1-desktop-1.report.html",
+        "performance": 99,
+        "acessibilidade": 96,
+        "boasPraticas": 100,
+        "seo": 100,
+        "fcp": 579.6591000000001,
+        "lcp": 936.5511000000001,
+        "tbt": 13,
+        "cls": 0.0002907142857675813,
+        "si": 689.4581206238806,
+        "pesoKB": 384.779296875,
+        "requisicoes": 13,
+        "trabalhoJsMs": 187.14899999999813,
+        "elementoLcp": "<p class=\"_resumo_1g594_201\">",
+        "fasesLcp": [
+          {
+            "fase": "Time to first byte",
+            "ms": 7.204
+          },
+          {
+            "fase": "Element render delay",
+            "ms": 646.083
+          }
+        ],
+        "listaRequisicoes": [
+          {
+            "url": "http://localhost:3010/",
+            "tipo": "Document",
+            "kb": 1.193359375,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=JetBrains+Mono:wght@400;500;700&display=swap",
+            "tipo": "Stylesheet",
+            "kb": 1.302734375,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/index-iO55UTZ_.js",
+            "tipo": "Script",
+            "kb": 193.86328125,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/index-CB8bIbgw.css",
+            "tipo": "Stylesheet",
+            "kb": 5.4990234375,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter i…",
+            "tipo": "Image",
+            "kb": 0,
+            "prioridade": "Low"
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGIInHWVyNJ.woff2",
+            "tipo": "Font",
+            "kb": 75.1025390625,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/hero-poster-DxnjO1_a.webp",
+            "tipo": "Image",
+            "kb": 33.9248046875,
+            "prioridade": "High"
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwgknk-4.woff2",
+            "tipo": "Font",
+            "kb": 30.6337890625,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/foto-perfil-tKIsezCZ.webp",
+            "tipo": "Image",
+            "kb": 37.7275390625,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/assets/loki-DucbXBFU.svg",
+            "tipo": "Image",
+            "kb": 1.2666015625,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/assets/aiops-CXMR3Tlj.svg",
+            "tipo": "Image",
+            "kb": 1.3251953125,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/assets/gateway-raBzTQHg.svg",
+            "tipo": "Image",
+            "kb": 1.244140625,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/favicon.svg",
+            "tipo": "Other",
+            "kb": 1.6962890625,
+            "prioridade": "High"
+          }
+        ],
+        "reprovadas": [
+          {
+            "categoria": "performance",
+            "id": "cache-insight",
+            "titulo": "Use efficient cache lifetimes",
+            "valor": "Est savings of 275 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "forced-reflow-insight",
+            "titulo": "Forced reflow",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "image-delivery-insight",
+            "titulo": "Improve image delivery",
+            "valor": "Est savings of 21 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "network-dependency-tree-insight",
+            "titulo": "Network dependency tree",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "render-blocking-insight",
+            "titulo": "Render-blocking requests",
+            "valor": "Est savings of 410 ms"
+          },
+          {
+            "categoria": "performance",
+            "id": "unused-javascript",
+            "titulo": "Reduce unused JavaScript",
+            "valor": "Est savings of 82 KiB"
+          },
+          {
+            "categoria": "accessibility",
+            "id": "color-contrast",
+            "titulo": "Background and foreground colors do not have a sufficient contrast ratio.",
+            "valor": ""
+          }
+        ],
+        "navegador": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+        "versao": "13.5.0"
+      },
+      {
+        "arquivo": "docs\\relatorios\\etapas\\1-hero-e-foto\\etapa1-desktop-2.report.html",
+        "performance": 98,
+        "acessibilidade": 96,
+        "boasPraticas": 100,
+        "seo": 100,
+        "fcp": 903.2501499999998,
+        "lcp": 943.2501500000001,
+        "tbt": 0,
+        "cls": 0.0002908963156561112,
+        "si": 903.2501499999998,
+        "pesoKB": 384.779296875,
+        "requisicoes": 13,
+        "trabalhoJsMs": 211.0699999999967,
+        "elementoLcp": "<p class=\"_resumo_1g594_201\">",
+        "fasesLcp": [
+          {
+            "fase": "Time to first byte",
+            "ms": 8.336
+          },
+          {
+            "fase": "Element render delay",
+            "ms": 642.539
+          }
+        ],
+        "listaRequisicoes": [
+          {
+            "url": "http://localhost:3010/",
+            "tipo": "Document",
+            "kb": 1.193359375,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=JetBrains+Mono:wght@400;500;700&display=swap",
+            "tipo": "Stylesheet",
+            "kb": 1.302734375,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/index-iO55UTZ_.js",
+            "tipo": "Script",
+            "kb": 193.86328125,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/index-CB8bIbgw.css",
+            "tipo": "Stylesheet",
+            "kb": 5.4990234375,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter i…",
+            "tipo": "Image",
+            "kb": 0,
+            "prioridade": "Low"
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGIInHWVyNJ.woff2",
+            "tipo": "Font",
+            "kb": 75.1025390625,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/hero-poster-DxnjO1_a.webp",
+            "tipo": "Image",
+            "kb": 33.9248046875,
+            "prioridade": "High"
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwgknk-4.woff2",
+            "tipo": "Font",
+            "kb": 30.6337890625,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/foto-perfil-tKIsezCZ.webp",
+            "tipo": "Image",
+            "kb": 37.7275390625,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/assets/loki-DucbXBFU.svg",
+            "tipo": "Image",
+            "kb": 1.2666015625,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/assets/aiops-CXMR3Tlj.svg",
+            "tipo": "Image",
+            "kb": 1.3251953125,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/assets/gateway-raBzTQHg.svg",
+            "tipo": "Image",
+            "kb": 1.244140625,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/favicon.svg",
+            "tipo": "Other",
+            "kb": 1.6962890625,
+            "prioridade": "High"
+          }
+        ],
+        "reprovadas": [
+          {
+            "categoria": "performance",
+            "id": "cache-insight",
+            "titulo": "Use efficient cache lifetimes",
+            "valor": "Est savings of 275 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "forced-reflow-insight",
+            "titulo": "Forced reflow",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "image-delivery-insight",
+            "titulo": "Improve image delivery",
+            "valor": "Est savings of 21 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "network-dependency-tree-insight",
+            "titulo": "Network dependency tree",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "render-blocking-insight",
+            "titulo": "Render-blocking requests",
+            "valor": "Est savings of 480 ms"
+          },
+          {
+            "categoria": "performance",
+            "id": "unused-javascript",
+            "titulo": "Reduce unused JavaScript",
+            "valor": "Est savings of 82 KiB"
+          },
+          {
+            "categoria": "accessibility",
+            "id": "color-contrast",
+            "titulo": "Background and foreground colors do not have a sufficient contrast ratio.",
+            "valor": ""
+          }
+        ],
+        "navegador": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+        "versao": "13.5.0"
+      },
+      {
+        "arquivo": "docs\\relatorios\\etapas\\1-hero-e-foto\\etapa1-desktop-3.report.html",
+        "performance": 98,
+        "acessibilidade": 96,
+        "boasPraticas": 100,
+        "seo": 100,
+        "fcp": 870.2916,
+        "lcp": 910.2916,
+        "tbt": 0,
+        "cls": 0.0002907142857675813,
+        "si": 870.2916,
+        "pesoKB": 384.779296875,
+        "requisicoes": 13,
+        "trabalhoJsMs": 230.16299999999703,
+        "elementoLcp": "<p class=\"_resumo_1g594_201\">",
+        "fasesLcp": [
+          {
+            "fase": "Time to first byte",
+            "ms": 8.587
+          },
+          {
+            "fase": "Element render delay",
+            "ms": 538.828
+          }
+        ],
+        "listaRequisicoes": [
+          {
+            "url": "http://localhost:3010/",
+            "tipo": "Document",
+            "kb": 1.193359375,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=JetBrains+Mono:wght@400;500;700&display=swap",
+            "tipo": "Stylesheet",
+            "kb": 1.302734375,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/index-iO55UTZ_.js",
+            "tipo": "Script",
+            "kb": 193.86328125,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/index-CB8bIbgw.css",
+            "tipo": "Stylesheet",
+            "kb": 5.4990234375,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter i…",
+            "tipo": "Image",
+            "kb": 0,
+            "prioridade": "Low"
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGIInHWVyNJ.woff2",
+            "tipo": "Font",
+            "kb": 75.1025390625,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/hero-poster-DxnjO1_a.webp",
+            "tipo": "Image",
+            "kb": 33.9248046875,
+            "prioridade": "High"
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwgknk-4.woff2",
+            "tipo": "Font",
+            "kb": 30.6337890625,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/foto-perfil-tKIsezCZ.webp",
+            "tipo": "Image",
+            "kb": 37.7275390625,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/assets/loki-DucbXBFU.svg",
+            "tipo": "Image",
+            "kb": 1.2666015625,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/assets/aiops-CXMR3Tlj.svg",
+            "tipo": "Image",
+            "kb": 1.3251953125,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/assets/gateway-raBzTQHg.svg",
+            "tipo": "Image",
+            "kb": 1.244140625,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/favicon.svg",
+            "tipo": "Other",
+            "kb": 1.6962890625,
+            "prioridade": "High"
+          }
+        ],
+        "reprovadas": [
+          {
+            "categoria": "performance",
+            "id": "cache-insight",
+            "titulo": "Use efficient cache lifetimes",
+            "valor": "Est savings of 275 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "forced-reflow-insight",
+            "titulo": "Forced reflow",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "image-delivery-insight",
+            "titulo": "Improve image delivery",
+            "valor": "Est savings of 21 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "network-dependency-tree-insight",
+            "titulo": "Network dependency tree",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "render-blocking-insight",
+            "titulo": "Render-blocking requests",
+            "valor": "Est savings of 450 ms"
+          },
+          {
+            "categoria": "performance",
+            "id": "unused-javascript",
+            "titulo": "Reduce unused JavaScript",
+            "valor": "Est savings of 82 KiB"
+          },
+          {
+            "categoria": "accessibility",
+            "id": "color-contrast",
+            "titulo": "Background and foreground colors do not have a sufficient contrast ratio.",
+            "valor": ""
+          }
+        ],
+        "navegador": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+        "versao": "13.5.0"
+      }
+    ]
+  },
+  "medianas": {
+    "mobile": {
+      "execucaoMediana": "docs\\relatorios\\etapas\\1-hero-e-foto\\etapa1-mobile-2.report.html",
+      "arquivo": "docs\\relatorios\\etapas\\1-hero-e-foto\\etapa1-mobile-2.report.html",
+      "performance": 83,
+      "acessibilidade": 96,
+      "boasPraticas": 100,
+      "seo": 100,
+      "fcp": 2308.8457,
+      "lcp": 3821.5939999999996,
+      "tbt": 129.5,
+      "cls": 0.0003853281522551595,
+      "si": 2940.0825396954774,
+      "pesoKB": 383.53515625,
+      "requisicoes": 12,
+      "trabalhoJsMs": 816.0519999999913,
+      "elementoLcp": "<p class=\"_resumo_1g594_201\">",
+      "fasesLcp": [
+        {
+          "fase": "Time to first byte",
+          "ms": 9.647999877929687
+        },
+        {
+          "fase": "Element render delay",
+          "ms": 589.9440001220703
+        }
+      ],
+      "listaRequisicoes": [
+        {
+          "url": "http://localhost:3010/",
+          "tipo": "Document",
+          "kb": 1.193359375,
+          "prioridade": "VeryHigh"
+        },
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=JetBrains+Mono:wght@400;500;700&display=swap",
+          "tipo": "Stylesheet",
+          "kb": 1.302734375,
+          "prioridade": "VeryHigh"
+        },
+        {
+          "url": "http://localhost:3010/assets/index-iO55UTZ_.js",
+          "tipo": "Script",
+          "kb": 193.86328125,
+          "prioridade": "High"
+        },
+        {
+          "url": "http://localhost:3010/assets/index-CB8bIbgw.css",
+          "tipo": "Stylesheet",
+          "kb": 5.4990234375,
+          "prioridade": "VeryHigh"
+        },
+        {
+          "url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter i…",
+          "tipo": "Image",
+          "kb": 0,
+          "prioridade": "Low"
+        },
+        {
+          "url": "https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGIInHWVyNJ.woff2",
+          "tipo": "Font",
+          "kb": 75.1025390625,
+          "prioridade": "VeryHigh"
+        },
+        {
+          "url": "http://localhost:3010/assets/hero-poster-DxnjO1_a.webp",
+          "tipo": "Image",
+          "kb": 33.9248046875,
+          "prioridade": "High"
+        },
+        {
+          "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwgknk-4.woff2",
+          "tipo": "Font",
+          "kb": 30.6337890625,
+          "prioridade": "VeryHigh"
+        },
+        {
+          "url": "http://localhost:3010/assets/foto-perfil-tKIsezCZ.webp",
+          "tipo": "Image",
+          "kb": 37.7275390625,
+          "prioridade": "Low"
+        },
+        {
+          "url": "http://localhost:3010/assets/loki-DucbXBFU.svg",
+          "tipo": "Image",
+          "kb": 1.2666015625,
+          "prioridade": "Low"
+        },
+        {
+          "url": "http://localhost:3010/assets/aiops-CXMR3Tlj.svg",
+          "tipo": "Image",
+          "kb": 1.3251953125,
+          "prioridade": "Low"
+        },
+        {
+          "url": "http://localhost:3010/favicon.svg",
+          "tipo": "Other",
+          "kb": 1.6962890625,
+          "prioridade": "High"
+        }
+      ],
+      "reprovadas": [
+        {
+          "categoria": "performance",
+          "id": "first-contentful-paint",
+          "titulo": "First Contentful Paint",
+          "valor": "2.3 s"
+        },
+        {
+          "categoria": "performance",
+          "id": "largest-contentful-paint",
+          "titulo": "Largest Contentful Paint",
+          "valor": "3.8 s"
+        },
+        {
+          "categoria": "performance",
+          "id": "total-blocking-time",
+          "titulo": "Total Blocking Time",
+          "valor": "200 ms"
+        },
+        {
+          "categoria": "performance",
+          "id": "cache-insight",
+          "titulo": "Use efficient cache lifetimes",
+          "valor": "Est savings of 274 KiB"
+        },
+        {
+          "categoria": "performance",
+          "id": "forced-reflow-insight",
+          "titulo": "Forced reflow",
+          "valor": ""
+        },
+        {
+          "categoria": "performance",
+          "id": "image-delivery-insight",
+          "titulo": "Improve image delivery",
+          "valor": "Est savings of 21 KiB"
+        },
+        {
+          "categoria": "performance",
+          "id": "network-dependency-tree-insight",
+          "titulo": "Network dependency tree",
+          "valor": ""
+        },
+        {
+          "categoria": "performance",
+          "id": "render-blocking-insight",
+          "titulo": "Render-blocking requests",
+          "valor": "Est savings of 450 ms"
+        },
+        {
+          "categoria": "performance",
+          "id": "interactive",
+          "titulo": "Time to Interactive",
+          "valor": "4.0 s"
+        },
+        {
+          "categoria": "performance",
+          "id": "max-potential-fid",
+          "titulo": "Max Potential First Input Delay",
+          "valor": "300 ms"
+        },
+        {
+          "categoria": "performance",
+          "id": "unused-javascript",
+          "titulo": "Reduce unused JavaScript",
+          "valor": "Est savings of 83 KiB"
+        },
+        {
+          "categoria": "performance",
+          "id": "mainthread-work-breakdown",
+          "titulo": "Minimize main-thread work",
+          "valor": "3.2 s"
+        },
+        {
+          "categoria": "accessibility",
+          "id": "color-contrast",
+          "titulo": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "valor": ""
+        }
+      ],
+      "navegador": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+      "versao": "13.5.0"
+    },
+    "desktop": {
+      "execucaoMediana": "docs\\relatorios\\etapas\\1-hero-e-foto\\etapa1-desktop-3.report.html",
+      "arquivo": "docs\\relatorios\\etapas\\1-hero-e-foto\\etapa1-desktop-3.report.html",
+      "performance": 98,
+      "acessibilidade": 96,
+      "boasPraticas": 100,
+      "seo": 100,
+      "fcp": 870.2916,
+      "lcp": 936.5511000000001,
+      "tbt": 0,
+      "cls": 0.0002907142857675813,
+      "si": 870.2916,
+      "pesoKB": 384.779296875,
+      "requisicoes": 13,
+      "trabalhoJsMs": 211.0699999999967,
+      "elementoLcp": "<p class=\"_resumo_1g594_201\">",
+      "fasesLcp": [
+        {
+          "fase": "Time to first byte",
+          "ms": 8.587
+        },
+        {
+          "fase": "Element render delay",
+          "ms": 538.828
+        }
+      ],
+      "listaRequisicoes": [
+        {
+          "url": "http://localhost:3010/",
+          "tipo": "Document",
+          "kb": 1.193359375,
+          "prioridade": "VeryHigh"
+        },
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=JetBrains+Mono:wght@400;500;700&display=swap",
+          "tipo": "Stylesheet",
+          "kb": 1.302734375,
+          "prioridade": "VeryHigh"
+        },
+        {
+          "url": "http://localhost:3010/assets/index-iO55UTZ_.js",
+          "tipo": "Script",
+          "kb": 193.86328125,
+          "prioridade": "High"
+        },
+        {
+          "url": "http://localhost:3010/assets/index-CB8bIbgw.css",
+          "tipo": "Stylesheet",
+          "kb": 5.4990234375,
+          "prioridade": "VeryHigh"
+        },
+        {
+          "url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter i…",
+          "tipo": "Image",
+          "kb": 0,
+          "prioridade": "Low"
+        },
+        {
+          "url": "https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGIInHWVyNJ.woff2",
+          "tipo": "Font",
+          "kb": 75.1025390625,
+          "prioridade": "VeryHigh"
+        },
+        {
+          "url": "http://localhost:3010/assets/hero-poster-DxnjO1_a.webp",
+          "tipo": "Image",
+          "kb": 33.9248046875,
+          "prioridade": "High"
+        },
+        {
+          "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwgknk-4.woff2",
+          "tipo": "Font",
+          "kb": 30.6337890625,
+          "prioridade": "VeryHigh"
+        },
+        {
+          "url": "http://localhost:3010/assets/foto-perfil-tKIsezCZ.webp",
+          "tipo": "Image",
+          "kb": 37.7275390625,
+          "prioridade": "Low"
+        },
+        {
+          "url": "http://localhost:3010/assets/loki-DucbXBFU.svg",
+          "tipo": "Image",
+          "kb": 1.2666015625,
+          "prioridade": "Low"
+        },
+        {
+          "url": "http://localhost:3010/assets/aiops-CXMR3Tlj.svg",
+          "tipo": "Image",
+          "kb": 1.3251953125,
+          "prioridade": "Low"
+        },
+        {
+          "url": "http://localhost:3010/assets/gateway-raBzTQHg.svg",
+          "tipo": "Image",
+          "kb": 1.244140625,
+          "prioridade": "Low"
+        },
+        {
+          "url": "http://localhost:3010/favicon.svg",
+          "tipo": "Other",
+          "kb": 1.6962890625,
+          "prioridade": "High"
+        }
+      ],
+      "reprovadas": [
+        {
+          "categoria": "performance",
+          "id": "cache-insight",
+          "titulo": "Use efficient cache lifetimes",
+          "valor": "Est savings of 275 KiB"
+        },
+        {
+          "categoria": "performance",
+          "id": "forced-reflow-insight",
+          "titulo": "Forced reflow",
+          "valor": ""
+        },
+        {
+          "categoria": "performance",
+          "id": "image-delivery-insight",
+          "titulo": "Improve image delivery",
+          "valor": "Est savings of 21 KiB"
+        },
+        {
+          "categoria": "performance",
+          "id": "network-dependency-tree-insight",
+          "titulo": "Network dependency tree",
+          "valor": ""
+        },
+        {
+          "categoria": "performance",
+          "id": "render-blocking-insight",
+          "titulo": "Render-blocking requests",
+          "valor": "Est savings of 450 ms"
+        },
+        {
+          "categoria": "performance",
+          "id": "unused-javascript",
+          "titulo": "Reduce unused JavaScript",
+          "valor": "Est savings of 82 KiB"
+        },
+        {
+          "categoria": "accessibility",
+          "id": "color-contrast",
+          "titulo": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "valor": ""
+        }
+      ],
+      "navegador": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+      "versao": "13.5.0"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.rodape {
+  max-width: var(--largura-max);
+  margin: clamp(80px, 10vw, 140px) auto 0;
+  padding: 24px var(--respiro) 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px 32px;
+  font-family: var(--fonte-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--cor-texto-suave);
+  border-top: 1px solid var(--cor-borda);
+}
+
+.rodape p {
+  margin: 0;
+}
+
+.topo {
+  color: var(--cor-texto);
+  text-decoration: none;
+}
+
+.topo:hover {
+  color: var(--cor-destaque);
+}

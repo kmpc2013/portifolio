@@ -1,0 +1,31 @@
+.secao {
+  max-width: var(--largura-max);
+  margin: 0 auto;
+  padding: clamp(80px, 12vw, 160px) var(--respiro) 0;
+}
+
+/* Linha de cabeçalho: índice em mono à esquerda, título gigante logo depois */
+.topo {
+  display: flex;
+  align-items: baseline;
+  gap: clamp(12px, 2vw, 32px);
+  padding-top: 16px;
+  margin-bottom: clamp(40px, 6vw, 80px);
+  border-top: 1px solid var(--cor-borda);
+}
+
+.indice {
+  font-family: var(--fonte-mono);
+  font-size: 0.8rem;
+  color: var(--cor-destaque);
+  white-space: nowrap;
+}
+
+.titulo {
+  margin: 0;
+  font-size: clamp(2.6rem, 9vw, 7.5rem);
+  font-weight: 800;
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+  text-transform: lowercase;
+}

@@ -1,0 +1,232 @@
+/* Celular: tudo empilhado, imagem sempre visível no topo */
+.linha {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  padding: 32px 0;
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.numero {
+  font-family: var(--fonte-mono);
+  font-size: 0.8rem;
+  color: var(--cor-destaque);
+}
+
+.corpo {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 0;
+}
+
+.titulo {
+  margin: 0;
+  font-size: clamp(1.8rem, 4.6vw, 3.6rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  transition:
+    color 0.3s,
+    transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.descricao {
+  margin: 0;
+  max-width: 56ch;
+  color: var(--cor-texto-suave);
+}
+
+.tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin-top: 6px;
+}
+
+.link {
+  font-family: var(--fonte-mono);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--cor-texto);
+  text-decoration: none;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--cor-borda);
+  transition:
+    color 0.2s,
+    border-color 0.2s;
+}
+
+.link:hover {
+  color: var(--cor-destaque);
+  border-color: var(--cor-destaque);
+}
+
+.linkDemo {
+  color: var(--cor-destaque);
+}
+
+/* A moldura é um <button>: zera o estilo padrão do navegador */
+.moldura {
+  position: relative;
+  order: -1;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 1px solid var(--cor-borda);
+  cursor: zoom-in;
+}
+
+/* Camada que o motion anima até a versão ampliada */
+.camadaImagem {
+  display: block;
+}
+
+/* Selo "Ampliar ⤢": sempre visível no celular, aparece no hover/foco no desktop */
+.selo {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 6px 10px;
+  font-family: var(--fonte-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--cor-fundo);
+  background: var(--cor-destaque);
+  transition:
+    opacity 0.3s,
+    transform 0.3s;
+}
+
+.imagem {
+  width: 100%;
+  /* Mantém todas as imagens na mesma proporção, mesmo com capturas de tamanhos diferentes */
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+/* Desktop: número | conteúdo | imagem. A imagem começa recortada (clip-path)
+   e abre de baixo para cima quando o mouse passa ou um link recebe foco. */
+@media (min-width: 900px) {
+  .linha {
+    grid-template-columns: 64px 1fr minmax(260px, 30%);
+    gap: 32px;
+    padding: 48px 0;
+    align-items: center;
+  }
+
+  .numero {
+    align-self: start;
+    padding-top: 0.9em;
+  }
+
+  .moldura {
+    order: 0;
+    border-color: transparent;
+    clip-path: inset(100% 0 0 0);
+    transition: clip-path 0.7s cubic-bezier(0.7, 0, 0.2, 1);
+  }
+
+  .imagem {
+    transform: scale(1.15);
+    filter: grayscale(1);
+    transition:
+      transform 0.9s cubic-bezier(0.2, 0.8, 0.2, 1),
+      filter 0.9s;
+  }
+
+  .linha:hover .moldura,
+  .linha:focus-within .moldura {
+    clip-path: inset(0 0 0 0);
+  }
+
+  .linha:hover .imagem,
+  .linha:focus-within .imagem {
+    transform: scale(1);
+    filter: grayscale(0);
+  }
+
+  /* No desktop o selo só aparece quando o mouse está sobre a própria imagem */
+  .selo {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+
+  .moldura:hover .selo,
+  .moldura:focus-visible .selo {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .linha:hover .titulo,
+  .linha:focus-within .titulo {
+    color: var(--cor-destaque);
+    transform: translateX(12px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .titulo,
+  .moldura,
+  .imagem,
+  .selo {
+    transition: none;
+  }
+}
+
+/* Aviso no lugar do link quando o repositório é interno */
+.privado {
+  font-family: var(--fonte-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--cor-texto-suave);
+  padding: 6px 0;
+}
+
+/* Selo de status acima do título (ex.: "Em andamento") */
+.status {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--fonte-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--cor-destaque);
+}
+
+.ponto {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--cor-destaque);
+  box-shadow: 0 0 10px var(--cor-destaque);
+}
+
+/* Resultado do projeto em número, logo abaixo do título */
+.impacto {
+  margin: 0;
+  font-family: var(--fonte-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--cor-destaque);
+}

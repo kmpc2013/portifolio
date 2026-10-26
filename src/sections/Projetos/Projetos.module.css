@@ -1,0 +1,4 @@
+/* Lista em linhas largas (sem cards): cada projeto separado por uma linha fina */
+.lista {
+  border-top: 1px solid var(--cor-borda);
+}

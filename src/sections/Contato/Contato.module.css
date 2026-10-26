@@ -1,0 +1,106 @@
+/* A faixa curva vai de ponta a ponta da tela, como o letreiro das habilidades */
+.faixaCurva {
+  margin: calc(-1 * clamp(20px, 3vw, 40px)) calc(50% - 50vw) clamp(32px, 5vw, 64px);
+  /* Corta só nas laterais: na vertical as letras da curva podem passar da caixa */
+  overflow-x: clip;
+}
+
+.grade {
+  display: grid;
+  gap: 56px;
+}
+
+.chamada {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  min-width: 0;
+}
+
+.texto {
+  margin: 0;
+  max-width: 40ch;
+  font-size: clamp(1.1rem, 1.6vw, 1.3rem);
+  color: var(--cor-texto-suave);
+}
+
+.disponibilidade {
+  margin: 0;
+  font-family: var(--fonte-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  color: var(--cor-texto-suave);
+}
+
+.disponibilidade span {
+  color: var(--cor-destaque);
+}
+
+.email {
+  font-size: clamp(1.5rem, 3.6vw, 3rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+  /* Sublinhado que "enche" da esquerda para a direita no hover */
+  background: linear-gradient(var(--cor-destaque), var(--cor-destaque)) left bottom / 0% 3px no-repeat;
+  transition:
+    background-size 0.4s cubic-bezier(0.7, 0, 0.2, 1),
+    color 0.3s;
+  justify-self: start;
+  align-self: flex-start;
+}
+
+.email:hover {
+  color: var(--cor-destaque);
+  background-size: 100% 3px;
+}
+
+.redes {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--cor-borda);
+}
+
+.redes a {
+  display: grid;
+  grid-template-columns: 3em 1fr auto;
+  align-items: baseline;
+  padding: 16px 0;
+  font-family: var(--fonte-mono);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  border-bottom: 1px solid var(--cor-borda);
+  transition:
+    color 0.2s,
+    padding 0.3s;
+}
+
+.redes a span:first-child {
+  font-size: 0.7rem;
+  color: var(--cor-destaque);
+}
+
+.redes a:hover {
+  color: var(--cor-destaque);
+  padding-left: 10px;
+}
+
+/* Desktop: chamada e redes à esquerda, formulário à direita */
+@media (min-width: 900px) {
+  .grade {
+    grid-template-columns: 1.1fr 1fr;
+    gap: clamp(48px, 7vw, 120px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .email,
+  .redes a {
+    transition: none;
+  }
+}

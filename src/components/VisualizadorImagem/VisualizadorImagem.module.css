@@ -1,0 +1,111 @@
+/* Ocupa a tela toda por cima do site (o cabeçalho fixo usa z-index 50) */
+.camada {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: grid;
+  place-items: center;
+  padding: clamp(16px, 4vw, 48px);
+  cursor: zoom-out;
+}
+
+.fundo {
+  position: absolute;
+  inset: 0;
+  background: rgba(7, 9, 11, 0.82);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.conteudo {
+  position: relative;
+  margin: 0;
+  width: min(1100px, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.moldura {
+  border: 1px solid var(--cor-destaque);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+
+/* A imagem cabe inteira na tela, sem corte (contain) e sem passar da altura disponível */
+.imagem {
+  display: block;
+  width: 100%;
+  max-height: calc(100svh - 200px);
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: var(--cor-superficie);
+}
+
+.legenda {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 14px;
+}
+
+.numero {
+  font-family: var(--fonte-mono);
+  font-size: 0.8rem;
+  color: var(--cor-destaque);
+}
+
+.titulo {
+  font-size: clamp(1.2rem, 2.4vw, 1.8rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.impacto {
+  font-family: var(--fonte-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--cor-destaque);
+}
+
+.fechar {
+  position: absolute;
+  top: clamp(12px, 3vw, 24px);
+  right: clamp(12px, 3vw, 24px);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  font-family: var(--fonte-mono);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--cor-texto);
+  background: rgba(13, 17, 20, 0.9);
+  border: 1px solid var(--cor-borda);
+  cursor: pointer;
+}
+
+.fechar:hover {
+  color: var(--cor-fundo);
+  background: var(--cor-destaque);
+  border-color: var(--cor-destaque);
+}
+
+.fechar kbd {
+  font-family: inherit;
+  font-size: 0.65rem;
+  padding: 2px 6px;
+  border: 1px solid currentColor;
+  opacity: 0.7;
+}
+
+/* No celular a dica "Esc" não faz sentido (não tem teclado físico) */
+@media (hover: none) {
+  .fechar kbd {
+    display: none;
+  }
+}

@@ -1,0 +1,85 @@
+/* Formulário "de terminal": sem caixas, só uma linha embaixo de cada campo */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-family: var(--fonte-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--cor-texto-suave);
+  transition: color 0.2s;
+}
+
+/* O rótulo fica verde enquanto o campo dele está em foco */
+.campo:focus-within {
+  color: var(--cor-destaque);
+}
+
+.campo input,
+.campo textarea {
+  font-family: var(--fonte-display);
+  font-size: 1.25rem;
+  text-transform: none;
+  letter-spacing: normal;
+  color: var(--cor-texto);
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--cor-borda);
+  border-radius: 0;
+  padding: 10px 0;
+  outline: none;
+  /* Só deixa redimensionar a altura, nunca a largura */
+  resize: vertical;
+  transition: border-color 0.2s;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+  border-bottom-color: var(--cor-destaque);
+}
+
+/* Borda vermelha nos campos marcados como inválidos pelo React */
+.campo [aria-invalid='true'] {
+  border-bottom-color: var(--cor-erro);
+}
+
+.erro {
+  font-size: 0.75rem;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--cor-erro);
+}
+
+.botao {
+  align-self: flex-start;
+  font-family: var(--fonte-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 18px 32px;
+  border: none;
+  border-radius: 0;
+  background: var(--cor-destaque);
+  color: var(--cor-fundo);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.botao:hover {
+  background: var(--cor-texto);
+}
+
+.sucesso {
+  margin: 0;
+  font-family: var(--fonte-mono);
+  font-size: 0.8rem;
+  color: var(--cor-sucesso);
+}

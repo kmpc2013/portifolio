@@ -1,0 +1,68 @@
+/* Sai da largura máxima da seção e vai de ponta a ponta da tela */
+.letreiro {
+  margin: 0 calc(50% - 50vw) clamp(48px, 7vw, 96px);
+  padding: 16px 0;
+  border-block: 1px solid var(--cor-borda);
+  color: var(--cor-texto);
+}
+
+.faixa {
+  font-size: clamp(2.6rem, 8vw, 7rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  padding-block: 0.05em;
+}
+
+/* Contorno da faixa vazada na cor de destaque */
+.letreiro :global(.parallax:nth-child(2)) {
+  color: var(--cor-destaque);
+}
+
+.grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
+  gap: 40px 32px;
+}
+
+.grupo {
+  padding-top: 16px;
+  border-top: 1px solid var(--cor-borda);
+}
+
+.categoria {
+  margin: 0 0 16px;
+  font-family: var(--fonte-mono);
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--cor-texto-suave);
+}
+
+.categoria span {
+  color: var(--cor-destaque);
+}
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Aqui os itens aparecem em texto grande, não em mono pequeno */
+.lista li {
+  font-family: var(--fonte-display);
+  font-size: 1.35rem;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: -0.02em;
+  color: var(--cor-texto);
+}
+
+.lista li::before,
+.lista li::after {
+  content: none;
+}

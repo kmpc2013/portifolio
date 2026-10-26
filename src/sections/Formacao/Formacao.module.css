@@ -1,0 +1,82 @@
+.grade {
+  display: grid;
+  gap: 56px;
+}
+
+.subtitulo {
+  margin: 0 0 8px;
+  font-family: var(--fonte-mono);
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--cor-texto-suave);
+}
+
+.lista {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--cor-borda);
+}
+
+/* Celular: data e instituição em cima, título embaixo */
+.item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--cor-borda);
+  transition: padding 0.3s;
+}
+
+.data {
+  font-family: var(--fonte-mono);
+  font-size: 0.75rem;
+  color: var(--cor-destaque);
+}
+
+.origem {
+  font-family: var(--fonte-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--cor-texto-suave);
+  text-align: right;
+}
+
+.titulo {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.item:hover {
+  padding-left: 10px;
+}
+
+.item:hover .titulo {
+  color: var(--cor-destaque);
+}
+
+.expirada .titulo,
+.expirada .data {
+  color: var(--cor-texto-suave);
+}
+
+/* Desktop: duas colunas (acadêmica | certificações) */
+@media (min-width: 900px) {
+  .grade {
+    grid-template-columns: 1fr 1.5fr;
+    gap: clamp(48px, 6vw, 96px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .item {
+    transition: none;
+  }
+}

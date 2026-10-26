@@ -1,0 +1,1544 @@
+{
+  "rotulo": "etapa3",
+  "url": "http://localhost:3010/",
+  "lighthouse": "lighthouse@13.5.0",
+  "data": "2026-10-25T20:08:12.497Z",
+  "resultados": {
+    "mobile": [
+      {
+        "arquivo": "docs\\relatorios\\etapas\\3-fontes\\etapa3-mobile-1.report.html",
+        "performance": 84,
+        "acessibilidade": 96,
+        "boasPraticas": 100,
+        "seo": 100,
+        "fcp": 2042.61525,
+        "lcp": 3554.6383,
+        "tbt": 248.02305,
+        "cls": 0.0003853281522551595,
+        "si": 2042.61525,
+        "pesoKB": 396.0625,
+        "requisicoes": 15,
+        "trabalhoJsMs": 905.2399999999881,
+        "elementoLcp": "<p class=\"_resumo_1g594_201\">",
+        "fasesLcp": [
+          {
+            "fase": "Time to first byte",
+            "ms": 10.802
+          },
+          {
+            "fase": "Element render delay",
+            "ms": 323.936
+          }
+        ],
+        "listaRequisicoes": [
+          {
+            "url": "http://localhost:3010/",
+            "tipo": "Document",
+            "kb": 1.2001953125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/bricolage-grotesque-latin-opsz-normal-Cre6nC2_.woff2",
+            "tipo": "Font",
+            "kb": 75.396484375,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/index-BzILjZQ3.js",
+            "tipo": "Script",
+            "kb": 184.0087890625,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/index-DSFn9WKr.css",
+            "tipo": "Stylesheet",
+            "kb": 7.9892578125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter i…",
+            "tipo": "Image",
+            "kb": 0,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/assets/ScrollVelocity-Bu2_2Gkt.js",
+            "tipo": "Script",
+            "kb": 7.0712890625,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/ScrollVelocity-C-6PR3f7.css",
+            "tipo": "Stylesheet",
+            "kb": 0.626953125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/CurvedLoop-BydVG3I7.js",
+            "tipo": "Script",
+            "kb": 3.4921875,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/CurvedLoop-BcWzG1NS.css",
+            "tipo": "Stylesheet",
+            "kb": 0.57421875,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/hero-poster-DxnjO1_a.webp",
+            "tipo": "Image",
+            "kb": 33.9248046875,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/jetbrains-mono-latin-wght-normal-B9CIFXIH.woff2",
+            "tipo": "Font",
+            "kb": 39.7626953125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/foto-perfil-tKIsezCZ.webp",
+            "tipo": "Image",
+            "kb": 37.7275390625,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/assets/loki-DucbXBFU.svg",
+            "tipo": "Image",
+            "kb": 1.2666015625,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/assets/aiops-CXMR3Tlj.svg",
+            "tipo": "Image",
+            "kb": 1.3251953125,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/favicon.svg",
+            "tipo": "Other",
+            "kb": 1.6962890625,
+            "prioridade": "High"
+          }
+        ],
+        "reprovadas": [
+          {
+            "categoria": "performance",
+            "id": "first-contentful-paint",
+            "titulo": "First Contentful Paint",
+            "valor": "2.0 s"
+          },
+          {
+            "categoria": "performance",
+            "id": "largest-contentful-paint",
+            "titulo": "Largest Contentful Paint",
+            "valor": "3.6 s"
+          },
+          {
+            "categoria": "performance",
+            "id": "total-blocking-time",
+            "titulo": "Total Blocking Time",
+            "valor": "250 ms"
+          },
+          {
+            "categoria": "performance",
+            "id": "cache-insight",
+            "titulo": "Use efficient cache lifetimes",
+            "valor": "Est savings of 393 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "forced-reflow-insight",
+            "titulo": "Forced reflow",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "image-delivery-insight",
+            "titulo": "Improve image delivery",
+            "valor": "Est savings of 21 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "network-dependency-tree-insight",
+            "titulo": "Network dependency tree",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "render-blocking-insight",
+            "titulo": "Render-blocking requests",
+            "valor": "Est savings of 150 ms"
+          },
+          {
+            "categoria": "performance",
+            "id": "max-potential-fid",
+            "titulo": "Max Potential First Input Delay",
+            "valor": "300 ms"
+          },
+          {
+            "categoria": "performance",
+            "id": "unused-javascript",
+            "titulo": "Reduce unused JavaScript",
+            "valor": "Est savings of 73 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "mainthread-work-breakdown",
+            "titulo": "Minimize main-thread work",
+            "valor": "2.8 s"
+          },
+          {
+            "categoria": "accessibility",
+            "id": "color-contrast",
+            "titulo": "Background and foreground colors do not have a sufficient contrast ratio.",
+            "valor": ""
+          }
+        ],
+        "navegador": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+        "versao": "13.5.0"
+      },
+      {
+        "arquivo": "docs\\relatorios\\etapas\\3-fontes\\etapa3-mobile-2.report.html",
+        "performance": 81,
+        "acessibilidade": 96,
+        "boasPraticas": 100,
+        "seo": 100,
+        "fcp": 2174.543375,
+        "lcp": 3616.260725,
+        "tbt": 308,
+        "cls": 0.0003853281522551595,
+        "si": 2174.543375,
+        "pesoKB": 396.0625,
+        "requisicoes": 15,
+        "trabalhoJsMs": 1314.8599999999701,
+        "elementoLcp": "<p class=\"_resumo_1g594_201\">",
+        "fasesLcp": [
+          {
+            "fase": "Time to first byte",
+            "ms": 13.61
+          },
+          {
+            "fase": "Element render delay",
+            "ms": 520.72
+          }
+        ],
+        "listaRequisicoes": [
+          {
+            "url": "http://localhost:3010/",
+            "tipo": "Document",
+            "kb": 1.2001953125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/bricolage-grotesque-latin-opsz-normal-Cre6nC2_.woff2",
+            "tipo": "Font",
+            "kb": 75.396484375,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/index-BzILjZQ3.js",
+            "tipo": "Script",
+            "kb": 184.0087890625,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/index-DSFn9WKr.css",
+            "tipo": "Stylesheet",
+            "kb": 7.9892578125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter i…",
+            "tipo": "Image",
+            "kb": 0,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/assets/ScrollVelocity-Bu2_2Gkt.js",
+            "tipo": "Script",
+            "kb": 7.0712890625,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/ScrollVelocity-C-6PR3f7.css",
+            "tipo": "Stylesheet",
+            "kb": 0.626953125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/CurvedLoop-BydVG3I7.js",
+            "tipo": "Script",
+            "kb": 3.4921875,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/CurvedLoop-BcWzG1NS.css",
+            "tipo": "Stylesheet",
+            "kb": 0.57421875,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/hero-poster-DxnjO1_a.webp",
+            "tipo": "Image",
+            "kb": 33.9248046875,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/jetbrains-mono-latin-wght-normal-B9CIFXIH.woff2",
+            "tipo": "Font",
+            "kb": 39.7626953125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/foto-perfil-tKIsezCZ.webp",
+            "tipo": "Image",
+            "kb": 37.7275390625,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/assets/loki-DucbXBFU.svg",
+            "tipo": "Image",
+            "kb": 1.2666015625,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/assets/aiops-CXMR3Tlj.svg",
+            "tipo": "Image",
+            "kb": 1.3251953125,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/favicon.svg",
+            "tipo": "Other",
+            "kb": 1.6962890625,
+            "prioridade": "High"
+          }
+        ],
+        "reprovadas": [
+          {
+            "categoria": "performance",
+            "id": "first-contentful-paint",
+            "titulo": "First Contentful Paint",
+            "valor": "2.2 s"
+          },
+          {
+            "categoria": "performance",
+            "id": "largest-contentful-paint",
+            "titulo": "Largest Contentful Paint",
+            "valor": "3.6 s"
+          },
+          {
+            "categoria": "performance",
+            "id": "total-blocking-time",
+            "titulo": "Total Blocking Time",
+            "valor": "310 ms"
+          },
+          {
+            "categoria": "performance",
+            "id": "cache-insight",
+            "titulo": "Use efficient cache lifetimes",
+            "valor": "Est savings of 393 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "forced-reflow-insight",
+            "titulo": "Forced reflow",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "image-delivery-insight",
+            "titulo": "Improve image delivery",
+            "valor": "Est savings of 21 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "network-dependency-tree-insight",
+            "titulo": "Network dependency tree",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "render-blocking-insight",
+            "titulo": "Render-blocking requests",
+            "valor": "Est savings of 150 ms"
+          },
+          {
+            "categoria": "performance",
+            "id": "max-potential-fid",
+            "titulo": "Max Potential First Input Delay",
+            "valor": "470 ms"
+          },
+          {
+            "categoria": "performance",
+            "id": "unused-javascript",
+            "titulo": "Reduce unused JavaScript",
+            "valor": "Est savings of 73 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "bootup-time",
+            "titulo": "Reduce JavaScript execution time",
+            "valor": "1.3 s"
+          },
+          {
+            "categoria": "performance",
+            "id": "mainthread-work-breakdown",
+            "titulo": "Minimize main-thread work",
+            "valor": "4.1 s"
+          },
+          {
+            "categoria": "accessibility",
+            "id": "color-contrast",
+            "titulo": "Background and foreground colors do not have a sufficient contrast ratio.",
+            "valor": ""
+          }
+        ],
+        "navegador": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+        "versao": "13.5.0"
+      },
+      {
+        "arquivo": "docs\\relatorios\\etapas\\3-fontes\\etapa3-mobile-3.report.html",
+        "performance": 79,
+        "acessibilidade": 96,
+        "boasPraticas": 100,
+        "seo": 100,
+        "fcp": 2186.3424999999997,
+        "lcp": 3646.4795000000004,
+        "tbt": 350.5,
+        "cls": 0.0003853281522551595,
+        "si": 2186.3424999999997,
+        "pesoKB": 396.0625,
+        "requisicoes": 15,
+        "trabalhoJsMs": 1569.2079999999812,
+        "elementoLcp": "<p class=\"_resumo_1g594_201\">",
+        "fasesLcp": [
+          {
+            "fase": "Time to first byte",
+            "ms": 23.06400012207031
+          },
+          {
+            "fase": "Element render delay",
+            "ms": 563.7149998779297
+          }
+        ],
+        "listaRequisicoes": [
+          {
+            "url": "http://localhost:3010/",
+            "tipo": "Document",
+            "kb": 1.2001953125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/bricolage-grotesque-latin-opsz-normal-Cre6nC2_.woff2",
+            "tipo": "Font",
+            "kb": 75.396484375,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/index-BzILjZQ3.js",
+            "tipo": "Script",
+            "kb": 184.0087890625,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/index-DSFn9WKr.css",
+            "tipo": "Stylesheet",
+            "kb": 7.9892578125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter i…",
+            "tipo": "Image",
+            "kb": 0,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/assets/ScrollVelocity-Bu2_2Gkt.js",
+            "tipo": "Script",
+            "kb": 7.0712890625,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/ScrollVelocity-C-6PR3f7.css",
+            "tipo": "Stylesheet",
+            "kb": 0.626953125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/CurvedLoop-BydVG3I7.js",
+            "tipo": "Script",
+            "kb": 3.4921875,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/CurvedLoop-BcWzG1NS.css",
+            "tipo": "Stylesheet",
+            "kb": 0.57421875,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/hero-poster-DxnjO1_a.webp",
+            "tipo": "Image",
+            "kb": 33.9248046875,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/jetbrains-mono-latin-wght-normal-B9CIFXIH.woff2",
+            "tipo": "Font",
+            "kb": 39.7626953125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/foto-perfil-tKIsezCZ.webp",
+            "tipo": "Image",
+            "kb": 37.7275390625,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/assets/loki-DucbXBFU.svg",
+            "tipo": "Image",
+            "kb": 1.2666015625,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/assets/aiops-CXMR3Tlj.svg",
+            "tipo": "Image",
+            "kb": 1.3251953125,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/favicon.svg",
+            "tipo": "Other",
+            "kb": 1.6962890625,
+            "prioridade": "High"
+          }
+        ],
+        "reprovadas": [
+          {
+            "categoria": "performance",
+            "id": "first-contentful-paint",
+            "titulo": "First Contentful Paint",
+            "valor": "2.2 s"
+          },
+          {
+            "categoria": "performance",
+            "id": "largest-contentful-paint",
+            "titulo": "Largest Contentful Paint",
+            "valor": "3.6 s"
+          },
+          {
+            "categoria": "performance",
+            "id": "total-blocking-time",
+            "titulo": "Total Blocking Time",
+            "valor": "350 ms"
+          },
+          {
+            "categoria": "performance",
+            "id": "cache-insight",
+            "titulo": "Use efficient cache lifetimes",
+            "valor": "Est savings of 393 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "forced-reflow-insight",
+            "titulo": "Forced reflow",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "image-delivery-insight",
+            "titulo": "Improve image delivery",
+            "valor": "Est savings of 21 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "network-dependency-tree-insight",
+            "titulo": "Network dependency tree",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "render-blocking-insight",
+            "titulo": "Render-blocking requests",
+            "valor": "Est savings of 150 ms"
+          },
+          {
+            "categoria": "performance",
+            "id": "interactive",
+            "titulo": "Time to Interactive",
+            "valor": "3.8 s"
+          },
+          {
+            "categoria": "performance",
+            "id": "max-potential-fid",
+            "titulo": "Max Potential First Input Delay",
+            "valor": "490 ms"
+          },
+          {
+            "categoria": "performance",
+            "id": "unused-javascript",
+            "titulo": "Reduce unused JavaScript",
+            "valor": "Est savings of 73 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "bootup-time",
+            "titulo": "Reduce JavaScript execution time",
+            "valor": "1.6 s"
+          },
+          {
+            "categoria": "performance",
+            "id": "mainthread-work-breakdown",
+            "titulo": "Minimize main-thread work",
+            "valor": "4.7 s"
+          },
+          {
+            "categoria": "accessibility",
+            "id": "color-contrast",
+            "titulo": "Background and foreground colors do not have a sufficient contrast ratio.",
+            "valor": ""
+          }
+        ],
+        "navegador": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+        "versao": "13.5.0"
+      }
+    ],
+    "desktop": [
+      {
+        "arquivo": "docs\\relatorios\\etapas\\3-fontes\\etapa3-desktop-1.report.html",
+        "performance": 100,
+        "acessibilidade": 96,
+        "boasPraticas": 100,
+        "seo": 100,
+        "fcp": 494.189625,
+        "lcp": 797.42755,
+        "tbt": 60.73792500000002,
+        "cls": 0.0002907142857675813,
+        "si": 625.3808912808397,
+        "pesoKB": 401.2734375,
+        "requisicoes": 18,
+        "trabalhoJsMs": 313.2459999999942,
+        "elementoLcp": "<p class=\"_resumo_1g594_201\">",
+        "fasesLcp": [
+          {
+            "fase": "Time to first byte",
+            "ms": 14.439
+          },
+          {
+            "fase": "Element render delay",
+            "ms": 523.55
+          }
+        ],
+        "listaRequisicoes": [
+          {
+            "url": "http://localhost:3010/",
+            "tipo": "Document",
+            "kb": 1.2001953125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/bricolage-grotesque-latin-opsz-normal-Cre6nC2_.woff2",
+            "tipo": "Font",
+            "kb": 75.396484375,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/index-BzILjZQ3.js",
+            "tipo": "Script",
+            "kb": 184.0087890625,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/index-DSFn9WKr.css",
+            "tipo": "Stylesheet",
+            "kb": 7.9892578125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter i…",
+            "tipo": "Image",
+            "kb": 0,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/assets/TargetCursor-CygT0Gjv.js",
+            "tipo": "Script",
+            "kb": 3.072265625,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/TargetCursor-DFmyNgbJ.css",
+            "tipo": "Stylesheet",
+            "kb": 0.89453125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/ScrollVelocity-Bu2_2Gkt.js",
+            "tipo": "Script",
+            "kb": 7.0712890625,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/ScrollVelocity-C-6PR3f7.css",
+            "tipo": "Stylesheet",
+            "kb": 0.626953125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/CurvedLoop-BydVG3I7.js",
+            "tipo": "Script",
+            "kb": 3.4921875,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/CurvedLoop-BcWzG1NS.css",
+            "tipo": "Stylesheet",
+            "kb": 0.57421875,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/hero-poster-DxnjO1_a.webp",
+            "tipo": "Image",
+            "kb": 33.9248046875,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/jetbrains-mono-latin-wght-normal-B9CIFXIH.woff2",
+            "tipo": "Font",
+            "kb": 39.7626953125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/foto-perfil-tKIsezCZ.webp",
+            "tipo": "Image",
+            "kb": 37.7275390625,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/assets/loki-DucbXBFU.svg",
+            "tipo": "Image",
+            "kb": 1.2666015625,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/assets/aiops-CXMR3Tlj.svg",
+            "tipo": "Image",
+            "kb": 1.3251953125,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/assets/gateway-raBzTQHg.svg",
+            "tipo": "Image",
+            "kb": 1.244140625,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/favicon.svg",
+            "tipo": "Other",
+            "kb": 1.6962890625,
+            "prioridade": "High"
+          }
+        ],
+        "reprovadas": [
+          {
+            "categoria": "performance",
+            "id": "cache-insight",
+            "titulo": "Use efficient cache lifetimes",
+            "valor": "Est savings of 398 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "forced-reflow-insight",
+            "titulo": "Forced reflow",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "image-delivery-insight",
+            "titulo": "Improve image delivery",
+            "valor": "Est savings of 21 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "network-dependency-tree-insight",
+            "titulo": "Network dependency tree",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "render-blocking-insight",
+            "titulo": "Render-blocking requests",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "unused-javascript",
+            "titulo": "Reduce unused JavaScript",
+            "valor": "Est savings of 73 KiB"
+          },
+          {
+            "categoria": "accessibility",
+            "id": "color-contrast",
+            "titulo": "Background and foreground colors do not have a sufficient contrast ratio.",
+            "valor": ""
+          }
+        ],
+        "navegador": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+        "versao": "13.5.0"
+      },
+      {
+        "arquivo": "docs\\relatorios\\etapas\\3-fontes\\etapa3-desktop-2.report.html",
+        "performance": 100,
+        "acessibilidade": 96,
+        "boasPraticas": 100,
+        "seo": 100,
+        "fcp": 479.45837500000005,
+        "lcp": 732.15005,
+        "tbt": 7,
+        "cls": 0.0002907142857675813,
+        "si": 491.74950147628664,
+        "pesoKB": 401.2734375,
+        "requisicoes": 18,
+        "trabalhoJsMs": 187.82899999999776,
+        "elementoLcp": "<p class=\"_resumo_1g594_201\">",
+        "fasesLcp": [
+          {
+            "fase": "Time to first byte",
+            "ms": 8.011
+          },
+          {
+            "fase": "Element render delay",
+            "ms": 274.466
+          }
+        ],
+        "listaRequisicoes": [
+          {
+            "url": "http://localhost:3010/",
+            "tipo": "Document",
+            "kb": 1.2001953125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/bricolage-grotesque-latin-opsz-normal-Cre6nC2_.woff2",
+            "tipo": "Font",
+            "kb": 75.396484375,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/index-BzILjZQ3.js",
+            "tipo": "Script",
+            "kb": 184.0087890625,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/index-DSFn9WKr.css",
+            "tipo": "Stylesheet",
+            "kb": 7.9892578125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter i…",
+            "tipo": "Image",
+            "kb": 0,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/assets/TargetCursor-CygT0Gjv.js",
+            "tipo": "Script",
+            "kb": 3.072265625,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/TargetCursor-DFmyNgbJ.css",
+            "tipo": "Stylesheet",
+            "kb": 0.89453125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/ScrollVelocity-Bu2_2Gkt.js",
+            "tipo": "Script",
+            "kb": 7.0712890625,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/ScrollVelocity-C-6PR3f7.css",
+            "tipo": "Stylesheet",
+            "kb": 0.626953125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/CurvedLoop-BydVG3I7.js",
+            "tipo": "Script",
+            "kb": 3.4921875,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/CurvedLoop-BcWzG1NS.css",
+            "tipo": "Stylesheet",
+            "kb": 0.57421875,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/hero-poster-DxnjO1_a.webp",
+            "tipo": "Image",
+            "kb": 33.9248046875,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/jetbrains-mono-latin-wght-normal-B9CIFXIH.woff2",
+            "tipo": "Font",
+            "kb": 39.7626953125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/foto-perfil-tKIsezCZ.webp",
+            "tipo": "Image",
+            "kb": 37.7275390625,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/assets/loki-DucbXBFU.svg",
+            "tipo": "Image",
+            "kb": 1.2666015625,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/assets/aiops-CXMR3Tlj.svg",
+            "tipo": "Image",
+            "kb": 1.3251953125,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/assets/gateway-raBzTQHg.svg",
+            "tipo": "Image",
+            "kb": 1.244140625,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/favicon.svg",
+            "tipo": "Other",
+            "kb": 1.6962890625,
+            "prioridade": "High"
+          }
+        ],
+        "reprovadas": [
+          {
+            "categoria": "performance",
+            "id": "cache-insight",
+            "titulo": "Use efficient cache lifetimes",
+            "valor": "Est savings of 398 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "forced-reflow-insight",
+            "titulo": "Forced reflow",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "image-delivery-insight",
+            "titulo": "Improve image delivery",
+            "valor": "Est savings of 21 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "network-dependency-tree-insight",
+            "titulo": "Network dependency tree",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "render-blocking-insight",
+            "titulo": "Render-blocking requests",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "unused-javascript",
+            "titulo": "Reduce unused JavaScript",
+            "valor": "Est savings of 73 KiB"
+          },
+          {
+            "categoria": "accessibility",
+            "id": "color-contrast",
+            "titulo": "Background and foreground colors do not have a sufficient contrast ratio.",
+            "valor": ""
+          }
+        ],
+        "navegador": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+        "versao": "13.5.0"
+      },
+      {
+        "arquivo": "docs\\relatorios\\etapas\\3-fontes\\etapa3-desktop-3.report.html",
+        "performance": 100,
+        "acessibilidade": 96,
+        "boasPraticas": 100,
+        "seo": 100,
+        "fcp": 483.75624999999997,
+        "lcp": 743.0074999999999,
+        "tbt": 12.751249999999914,
+        "cls": 0.0002907142857675813,
+        "si": 502.50803503287483,
+        "pesoKB": 401.2734375,
+        "requisicoes": 18,
+        "trabalhoJsMs": 208.0409999999964,
+        "elementoLcp": "<p class=\"_resumo_1g594_201\">",
+        "fasesLcp": [
+          {
+            "fase": "Time to first byte",
+            "ms": 9.083
+          },
+          {
+            "fase": "Element render delay",
+            "ms": 292.483
+          }
+        ],
+        "listaRequisicoes": [
+          {
+            "url": "http://localhost:3010/",
+            "tipo": "Document",
+            "kb": 1.2001953125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/bricolage-grotesque-latin-opsz-normal-Cre6nC2_.woff2",
+            "tipo": "Font",
+            "kb": 75.396484375,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/index-BzILjZQ3.js",
+            "tipo": "Script",
+            "kb": 184.0087890625,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/index-DSFn9WKr.css",
+            "tipo": "Stylesheet",
+            "kb": 7.9892578125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter i…",
+            "tipo": "Image",
+            "kb": 0,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/assets/TargetCursor-CygT0Gjv.js",
+            "tipo": "Script",
+            "kb": 3.072265625,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/TargetCursor-DFmyNgbJ.css",
+            "tipo": "Stylesheet",
+            "kb": 0.89453125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/ScrollVelocity-Bu2_2Gkt.js",
+            "tipo": "Script",
+            "kb": 7.0712890625,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/ScrollVelocity-C-6PR3f7.css",
+            "tipo": "Stylesheet",
+            "kb": 0.626953125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/CurvedLoop-BydVG3I7.js",
+            "tipo": "Script",
+            "kb": 3.4921875,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/CurvedLoop-BcWzG1NS.css",
+            "tipo": "Stylesheet",
+            "kb": 0.57421875,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/hero-poster-DxnjO1_a.webp",
+            "tipo": "Image",
+            "kb": 33.9248046875,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3010/assets/jetbrains-mono-latin-wght-normal-B9CIFXIH.woff2",
+            "tipo": "Font",
+            "kb": 39.7626953125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3010/assets/foto-perfil-tKIsezCZ.webp",
+            "tipo": "Image",
+            "kb": 37.7275390625,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/assets/loki-DucbXBFU.svg",
+            "tipo": "Image",
+            "kb": 1.2666015625,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/assets/aiops-CXMR3Tlj.svg",
+            "tipo": "Image",
+            "kb": 1.3251953125,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/assets/gateway-raBzTQHg.svg",
+            "tipo": "Image",
+            "kb": 1.244140625,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3010/favicon.svg",
+            "tipo": "Other",
+            "kb": 1.6962890625,
+            "prioridade": "High"
+          }
+        ],
+        "reprovadas": [
+          {
+            "categoria": "performance",
+            "id": "cache-insight",
+            "titulo": "Use efficient cache lifetimes",
+            "valor": "Est savings of 398 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "forced-reflow-insight",
+            "titulo": "Forced reflow",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "image-delivery-insight",
+            "titulo": "Improve image delivery",
+            "valor": "Est savings of 21 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "network-dependency-tree-insight",
+            "titulo": "Network dependency tree",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "render-blocking-insight",
+            "titulo": "Render-blocking requests",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "unused-javascript",
+            "titulo": "Reduce unused JavaScript",
+            "valor": "Est savings of 73 KiB"
+          },
+          {
+            "categoria": "accessibility",
+            "id": "color-contrast",
+            "titulo": "Background and foreground colors do not have a sufficient contrast ratio.",
+            "valor": ""
+          }
+        ],
+        "navegador": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+        "versao": "13.5.0"
+      }
+    ]
+  },
+  "medianas": {
+    "mobile": {
+      "execucaoMediana": "docs\\relatorios\\etapas\\3-fontes\\etapa3-mobile-2.report.html",
+      "arquivo": "docs\\relatorios\\etapas\\3-fontes\\etapa3-mobile-2.report.html",
+      "performance": 81,
+      "acessibilidade": 96,
+      "boasPraticas": 100,
+      "seo": 100,
+      "fcp": 2174.543375,
+      "lcp": 3616.260725,
+      "tbt": 308,
+      "cls": 0.0003853281522551595,
+      "si": 2174.543375,
+      "pesoKB": 396.0625,
+      "requisicoes": 15,
+      "trabalhoJsMs": 1314.8599999999701,
+      "elementoLcp": "<p class=\"_resumo_1g594_201\">",
+      "fasesLcp": [
+        {
+          "fase": "Time to first byte",
+          "ms": 13.61
+        },
+        {
+          "fase": "Element render delay",
+          "ms": 520.72
+        }
+      ],
+      "listaRequisicoes": [
+        {
+          "url": "http://localhost:3010/",
+          "tipo": "Document",
+          "kb": 1.2001953125,
+          "prioridade": "VeryHigh"
+        },
+        {
+          "url": "http://localhost:3010/assets/bricolage-grotesque-latin-opsz-normal-Cre6nC2_.woff2",
+          "tipo": "Font",
+          "kb": 75.396484375,
+          "prioridade": "High"
+        },
+        {
+          "url": "http://localhost:3010/assets/index-BzILjZQ3.js",
+          "tipo": "Script",
+          "kb": 184.0087890625,
+          "prioridade": "High"
+        },
+        {
+          "url": "http://localhost:3010/assets/index-DSFn9WKr.css",
+          "tipo": "Stylesheet",
+          "kb": 7.9892578125,
+          "prioridade": "VeryHigh"
+        },
+        {
+          "url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter i…",
+          "tipo": "Image",
+          "kb": 0,
+          "prioridade": "Low"
+        },
+        {
+          "url": "http://localhost:3010/assets/ScrollVelocity-Bu2_2Gkt.js",
+          "tipo": "Script",
+          "kb": 7.0712890625,
+          "prioridade": "High"
+        },
+        {
+          "url": "http://localhost:3010/assets/ScrollVelocity-C-6PR3f7.css",
+          "tipo": "Stylesheet",
+          "kb": 0.626953125,
+          "prioridade": "VeryHigh"
+        },
+        {
+          "url": "http://localhost:3010/assets/CurvedLoop-BydVG3I7.js",
+          "tipo": "Script",
+          "kb": 3.4921875,
+          "prioridade": "High"
+        },
+        {
+          "url": "http://localhost:3010/assets/CurvedLoop-BcWzG1NS.css",
+          "tipo": "Stylesheet",
+          "kb": 0.57421875,
+          "prioridade": "VeryHigh"
+        },
+        {
+          "url": "http://localhost:3010/assets/hero-poster-DxnjO1_a.webp",
+          "tipo": "Image",
+          "kb": 33.9248046875,
+          "prioridade": "High"
+        },
+        {
+          "url": "http://localhost:3010/assets/jetbrains-mono-latin-wght-normal-B9CIFXIH.woff2",
+          "tipo": "Font",
+          "kb": 39.7626953125,
+          "prioridade": "VeryHigh"
+        },
+        {
+          "url": "http://localhost:3010/assets/foto-perfil-tKIsezCZ.webp",
+          "tipo": "Image",
+          "kb": 37.7275390625,
+          "prioridade": "Low"
+        },
+        {
+          "url": "http://localhost:3010/assets/loki-DucbXBFU.svg",
+          "tipo": "Image",
+          "kb": 1.2666015625,
+          "prioridade": "Low"
+        },
+        {
+          "url": "http://localhost:3010/assets/aiops-CXMR3Tlj.svg",
+          "tipo": "Image",
+          "kb": 1.3251953125,
+          "prioridade": "Low"
+        },
+        {
+          "url": "http://localhost:3010/favicon.svg",
+          "tipo": "Other",
+          "kb": 1.6962890625,
+          "prioridade": "High"
+        }
+      ],
+      "reprovadas": [
+        {
+          "categoria": "performance",
+          "id": "first-contentful-paint",
+          "titulo": "First Contentful Paint",
+          "valor": "2.2 s"
+        },
+        {
+          "categoria": "performance",
+          "id": "largest-contentful-paint",
+          "titulo": "Largest Contentful Paint",
+          "valor": "3.6 s"
+        },
+        {
+          "categoria": "performance",
+          "id": "total-blocking-time",
+          "titulo": "Total Blocking Time",
+          "valor": "310 ms"
+        },
+        {
+          "categoria": "performance",
+          "id": "cache-insight",
+          "titulo": "Use efficient cache lifetimes",
+          "valor": "Est savings of 393 KiB"
+        },
+        {
+          "categoria": "performance",
+          "id": "forced-reflow-insight",
+          "titulo": "Forced reflow",
+          "valor": ""
+        },
+        {
+          "categoria": "performance",
+          "id": "image-delivery-insight",
+          "titulo": "Improve image delivery",
+          "valor": "Est savings of 21 KiB"
+        },
+        {
+          "categoria": "performance",
+          "id": "network-dependency-tree-insight",
+          "titulo": "Network dependency tree",
+          "valor": ""
+        },
+        {
+          "categoria": "performance",
+          "id": "render-blocking-insight",
+          "titulo": "Render-blocking requests",
+          "valor": "Est savings of 150 ms"
+        },
+        {
+          "categoria": "performance",
+          "id": "max-potential-fid",
+          "titulo": "Max Potential First Input Delay",
+          "valor": "470 ms"
+        },
+        {
+          "categoria": "performance",
+          "id": "unused-javascript",
+          "titulo": "Reduce unused JavaScript",
+          "valor": "Est savings of 73 KiB"
+        },
+        {
+          "categoria": "performance",
+          "id": "bootup-time",
+          "titulo": "Reduce JavaScript execution time",
+          "valor": "1.3 s"
+        },
+        {
+          "categoria": "performance",
+          "id": "mainthread-work-breakdown",
+          "titulo": "Minimize main-thread work",
+          "valor": "4.1 s"
+        },
+        {
+          "categoria": "accessibility",
+          "id": "color-contrast",
+          "titulo": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "valor": ""
+        }
+      ],
+      "navegador": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+      "versao": "13.5.0"
+    },
+    "desktop": {
+      "execucaoMediana": "docs\\relatorios\\etapas\\3-fontes\\etapa3-desktop-2.report.html",
+      "arquivo": "docs\\relatorios\\etapas\\3-fontes\\etapa3-desktop-2.report.html",
+      "performance": 100,
+      "acessibilidade": 96,
+      "boasPraticas": 100,
+      "seo": 100,
+      "fcp": 483.75624999999997,
+      "lcp": 743.0074999999999,
+      "tbt": 12.751249999999914,
+      "cls": 0.0002907142857675813,
+      "si": 502.50803503287483,
+      "pesoKB": 401.2734375,
+      "requisicoes": 18,
+      "trabalhoJsMs": 208.0409999999964,
+      "elementoLcp": "<p class=\"_resumo_1g594_201\">",
+      "fasesLcp": [
+        {
+          "fase": "Time to first byte",
+          "ms": 8.011
+        },
+        {
+          "fase": "Element render delay",
+          "ms": 274.466
+        }
+      ],
+      "listaRequisicoes": [
+        {
+          "url": "http://localhost:3010/",
+          "tipo": "Document",
+          "kb": 1.2001953125,
+          "prioridade": "VeryHigh"
+        },
+        {
+          "url": "http://localhost:3010/assets/bricolage-grotesque-latin-opsz-normal-Cre6nC2_.woff2",
+          "tipo": "Font",
+          "kb": 75.396484375,
+          "prioridade": "High"
+        },
+        {
+          "url": "http://localhost:3010/assets/index-BzILjZQ3.js",
+          "tipo": "Script",
+          "kb": 184.0087890625,
+          "prioridade": "High"
+        },
+        {
+          "url": "http://localhost:3010/assets/index-DSFn9WKr.css",
+          "tipo": "Stylesheet",
+          "kb": 7.9892578125,
+          "prioridade": "VeryHigh"
+        },
+        {
+          "url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter i…",
+          "tipo": "Image",
+          "kb": 0,
+          "prioridade": "Low"
+        },
+        {
+          "url": "http://localhost:3010/assets/TargetCursor-CygT0Gjv.js",
+          "tipo": "Script",
+          "kb": 3.072265625,
+          "prioridade": "High"
+        },
+        {
+          "url": "http://localhost:3010/assets/TargetCursor-DFmyNgbJ.css",
+          "tipo": "Stylesheet",
+          "kb": 0.89453125,
+          "prioridade": "VeryHigh"
+        },
+        {
+          "url": "http://localhost:3010/assets/ScrollVelocity-Bu2_2Gkt.js",
+          "tipo": "Script",
+          "kb": 7.0712890625,
+          "prioridade": "High"
+        },
+        {
+          "url": "http://localhost:3010/assets/ScrollVelocity-C-6PR3f7.css",
+          "tipo": "Stylesheet",
+          "kb": 0.626953125,
+          "prioridade": "VeryHigh"
+        },
+        {
+          "url": "http://localhost:3010/assets/CurvedLoop-BydVG3I7.js",
+          "tipo": "Script",
+          "kb": 3.4921875,
+          "prioridade": "High"
+        },
+        {
+          "url": "http://localhost:3010/assets/CurvedLoop-BcWzG1NS.css",
+          "tipo": "Stylesheet",
+          "kb": 0.57421875,
+          "prioridade": "VeryHigh"
+        },
+        {
+          "url": "http://localhost:3010/assets/hero-poster-DxnjO1_a.webp",
+          "tipo": "Image",
+          "kb": 33.9248046875,
+          "prioridade": "High"
+        },
+        {
+          "url": "http://localhost:3010/assets/jetbrains-mono-latin-wght-normal-B9CIFXIH.woff2",
+          "tipo": "Font",
+          "kb": 39.7626953125,
+          "prioridade": "VeryHigh"
+        },
+        {
+          "url": "http://localhost:3010/assets/foto-perfil-tKIsezCZ.webp",
+          "tipo": "Image",
+          "kb": 37.7275390625,
+          "prioridade": "Low"
+        },
+        {
+          "url": "http://localhost:3010/assets/loki-DucbXBFU.svg",
+          "tipo": "Image",
+          "kb": 1.2666015625,
+          "prioridade": "Low"
+        },
+        {
+          "url": "http://localhost:3010/assets/aiops-CXMR3Tlj.svg",
+          "tipo": "Image",
+          "kb": 1.3251953125,
+          "prioridade": "Low"
+        },
+        {
+          "url": "http://localhost:3010/assets/gateway-raBzTQHg.svg",
+          "tipo": "Image",
+          "kb": 1.244140625,
+          "prioridade": "Low"
+        },
+        {
+          "url": "http://localhost:3010/favicon.svg",
+          "tipo": "Other",
+          "kb": 1.6962890625,
+          "prioridade": "High"
+        }
+      ],
+      "reprovadas": [
+        {
+          "categoria": "performance",
+          "id": "cache-insight",
+          "titulo": "Use efficient cache lifetimes",
+          "valor": "Est savings of 398 KiB"
+        },
+        {
+          "categoria": "performance",
+          "id": "forced-reflow-insight",
+          "titulo": "Forced reflow",
+          "valor": ""
+        },
+        {
+          "categoria": "performance",
+          "id": "image-delivery-insight",
+          "titulo": "Improve image delivery",
+          "valor": "Est savings of 21 KiB"
+        },
+        {
+          "categoria": "performance",
+          "id": "network-dependency-tree-insight",
+          "titulo": "Network dependency tree",
+          "valor": ""
+        },
+        {
+          "categoria": "performance",
+          "id": "render-blocking-insight",
+          "titulo": "Render-blocking requests",
+          "valor": ""
+        },
+        {
+          "categoria": "performance",
+          "id": "unused-javascript",
+          "titulo": "Reduce unused JavaScript",
+          "valor": "Est savings of 73 KiB"
+        },
+        {
+          "categoria": "accessibility",
+          "id": "color-contrast",
+          "titulo": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "valor": ""
+        }
+      ],
+      "navegador": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+      "versao": "13.5.0"
+    }
+  }
+}
