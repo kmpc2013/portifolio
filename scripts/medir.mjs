@@ -31,9 +31,12 @@ mkdirSync(saida, { recursive: true })
 
 // Se já houver algo na porta, mediríamos a página errada sem perceber.
 const sobeServidor = !soResumir && !remoto
-if (sobeServidor && (await responde())) throw new Error(`A porta ${PORTA} já está em uso: feche o servidor ou use PORTA=<outra>`)
+if (sobeServidor && (await responde()))
+  throw new Error(`A porta ${PORTA} já está em uso: feche o servidor ou use PORTA=<outra>`)
 
-const servidor = sobeServidor ? spawn('npx', ['serve', resolve(raiz), '-l', PORTA, '--no-clipboard'], { shell: true, stdio: 'ignore' }) : null
+const servidor = sobeServidor
+  ? spawn('npx', ['serve', resolve(raiz), '-l', PORTA, '--no-clipboard'], { shell: true, stdio: 'ignore' })
+  : null
 if (servidor) await esperarServidor()
 
 const resultados = {}
@@ -44,27 +47,45 @@ try {
       const base = join(saida, `${rotulo}-${preset}-${i}`)
       if (!soResumir) {
         console.log(`Lighthouse ${preset} ${i}/${EXECUCOES}...`)
-        execFileSync('npx', [
-          '--yes', LIGHTHOUSE, URL,
-          '--output=html', `--output-path=${base}.report.html`,
-          '--only-categories=performance,accessibility,best-practices,seo',
-          '--chrome-flags=--headless=new',
-          '--quiet',
-          ...(preset === 'desktop' ? ['--preset=desktop'] : []),
-        ], { shell: true, stdio: 'inherit' })
+        execFileSync(
+          'npx',
+          [
+            '--yes',
+            LIGHTHOUSE,
+            URL,
+            '--output=html',
+            `--output-path=${base}.report.html`,
+            '--only-categories=performance,accessibility,best-practices,seo',
+            '--chrome-flags=--headless=new',
+            '--quiet',
+            ...(preset === 'desktop' ? ['--preset=desktop'] : []),
+          ],
+          { shell: true, stdio: 'inherit' },
+        )
       }
       // O relatório HTML embute o JSON completo do Lighthouse.
       const html = readFileSync(`${base}.report.html`, 'utf8')
-      resultados[preset].push({ arquivo: `${base}.report.html`, ...extrair(JSON.parse(html.match(/__LIGHTHOUSE_JSON__ = (.*?);<\/script>/s)[1])) })
+      resultados[preset].push({
+        arquivo: `${base}.report.html`,
+        ...extrair(JSON.parse(html.match(/__LIGHTHOUSE_JSON__ = (.*?);<\/script>/s)[1])),
+      })
     }
   }
 } finally {
-  if (servidor && process.platform === 'win32') execFileSync('taskkill', ['/pid', String(servidor.pid), '/T', '/F'], { stdio: 'ignore' })
+  if (servidor && process.platform === 'win32')
+    execFileSync('taskkill', ['/pid', String(servidor.pid), '/T', '/F'], { stdio: 'ignore' })
   else servidor?.kill()
 }
 
 const medianas = Object.fromEntries(PRESETS.map((p) => [p, medianaPorMetrica(resultados[p])]))
-writeFileSync(join(saida, 'resumo.json'), JSON.stringify({ rotulo, url: URL, lighthouse: LIGHTHOUSE, data: new Date().toISOString(), resultados, medianas }, null, 2))
+writeFileSync(
+  join(saida, 'resumo.json'),
+  JSON.stringify(
+    { rotulo, url: URL, lighthouse: LIGHTHOUSE, data: new Date().toISOString(), resultados, medianas },
+    null,
+    2,
+  ),
+)
 writeFileSync(join(saida, 'resumo.md'), tabela(medianas))
 console.log(tabela(medianas))
 
@@ -76,7 +97,10 @@ function extrair(r) {
     c.auditRefs
       .filter((ref) => ref.weight > 0 || categoria === 'performance')
       .map((ref) => a[ref.id])
-      .filter((x) => x.score !== null && x.score < 0.9 && !['informative', 'notApplicable', 'manual'].includes(x.scoreDisplayMode))
+      .filter(
+        (x) =>
+          x.score !== null && x.score < 0.9 && !['informative', 'notApplicable', 'manual'].includes(x.scoreDisplayMode),
+      )
       .map((x) => ({ categoria, id: x.id, titulo: x.title, valor: x.displayValue ?? '' })),
   )
   return {
@@ -93,9 +117,14 @@ function extrair(r) {
     requisicoes: a['network-requests'].details.items.length,
     trabalhoJsMs: a['bootup-time']?.numericValue ?? 0,
     elementoLcp: lcp.find((item) => item.type === 'node')?.snippet ?? '',
-    fasesLcp: lcp.find((item) => item.type === 'table')?.items?.map((f) => ({ fase: f.label ?? f.subpart, ms: f.duration })) ?? [],
+    fasesLcp:
+      lcp.find((item) => item.type === 'table')?.items?.map((f) => ({ fase: f.label ?? f.subpart, ms: f.duration })) ??
+      [],
     listaRequisicoes: a['network-requests'].details.items.map((x) => ({
-      url: x.url, tipo: x.resourceType ?? '', kb: (x.transferSize ?? 0) / 1024, prioridade: x.priority ?? '',
+      url: x.url,
+      tipo: x.resourceType ?? '',
+      kb: (x.transferSize ?? 0) / 1024,
+      prioridade: x.priority ?? '',
     })),
     reprovadas,
     navegador: r.environment.hostUserAgent,
@@ -109,7 +138,10 @@ function medianaPorMetrica(execucoes) {
   const m = { execucaoMediana: porNota[Math.floor(porNota.length / 2)].arquivo }
   for (const chave of Object.keys(execucoes[0])) {
     const valores = execucoes.map((e) => e[chave])
-    if (typeof valores[0] !== 'number') { m[chave] = porNota[Math.floor(porNota.length / 2)][chave]; continue }
+    if (typeof valores[0] !== 'number') {
+      m[chave] = porNota[Math.floor(porNota.length / 2)][chave]
+      continue
+    }
     const ordenados = [...valores].sort((x, y) => x - y)
     m[chave] = ordenados[Math.floor(ordenados.length / 2)]
   }
@@ -141,7 +173,11 @@ function tabela(med) {
 }
 
 async function responde() {
-  try { return (await fetch(URL)).ok } catch { return false }
+  try {
+    return (await fetch(URL)).ok
+  } catch {
+    return false
+  }
 }
 
 async function esperarServidor() {

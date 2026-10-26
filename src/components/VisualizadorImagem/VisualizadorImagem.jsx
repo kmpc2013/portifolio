@@ -1,13 +1,9 @@
 import { useEffect, useRef } from 'react'
 import { createPortal } from 'react-dom'
-import { motion } from 'motion/react'
 import styles from './VisualizadorImagem.module.css'
 
-// Mola usada na ampliação: rápida, com um leve "assentamento" no final
-const mola = { type: 'spring', stiffness: 260, damping: 30 }
-
-// Quantos visualizadores estão montados agora. Pode haver dois ao mesmo tempo por um instante:
-// um terminando a animação de saída e outro acabando de abrir. A rolagem só é liberada no zero.
+// Quantos visualizadores estão montados agora. A rolagem só é liberada no zero, então
+// abrir e fechar em sequência rápida nunca deixa a página presa nem solta por engano.
 let abertos = 0
 function travarRolagem(travar) {
   abertos += travar ? 1 : -1
@@ -15,8 +11,8 @@ function travarRolagem(travar) {
 }
 
 // Imagem ampliada por cima da página (lightbox).
-// A imagem sai do lugar da miniatura e cresce até o centro graças ao layoutId,
-// que precisa ser igual ao da miniatura em LinhaProjeto.
+// A imagem sai do lugar da miniatura e cresce até o centro graças ao view-transition-name,
+// que precisa ser igual ao da miniatura em LinhaProjeto (a transição é disparada em Projetos).
 export default function VisualizadorImagem({ id, numero, titulo, impacto, imagem, onFechar }) {
   const camadaRef = useRef(null)
   const botaoFecharRef = useRef(null)
@@ -55,37 +51,29 @@ export default function VisualizadorImagem({ id, numero, titulo, impacto, imagem
 
   // createPortal desenha o diálogo direto no <body>, fora da lista de projetos,
   // para ele ficar por cima de tudo sem ser cortado pelo overflow das seções
+  // O clique na camada é só um atalho do mouse: pelo teclado, Esc e o botão "Fechar" fazem o mesmo.
+  // role="dialog" em vez de <dialog>: o <dialog> nativo abre na top layer e quebraria a animação da imagem.
   return createPortal(
+    // oxlint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-noninteractive-element-interactions
     <div
       ref={camadaRef}
       className={styles.camada}
+      // oxlint-disable-next-line jsx-a11y/prefer-tag-over-role
       role="dialog"
       aria-modal="true"
       aria-labelledby={`ampliado-${id}-titulo`}
       // Clicar em qualquer lugar fora do botão de fechar também fecha
       onClick={onFechar}
     >
-      {/* Fundo escuro e desfocado: entra e sai com fade */}
-      <motion.div
-        className={styles.fundo}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.3 }}
-      />
+      {/* Fundo escuro e desfocado: entra e sai com o fade da própria View Transition */}
+      <div className={styles.fundo} />
 
       <figure className={styles.conteudo}>
-        <motion.div layoutId={`imagem-${id}`} className={styles.moldura} transition={mola}>
+        <div className={styles.moldura} style={{ viewTransitionName: `imagem-${id}` }}>
           <img src={imagem} alt={`Diagrama do projeto ${titulo}`} className={styles.imagem} />
-        </motion.div>
+        </div>
 
-        {/* Legenda sobe um pouco depois da imagem chegar */}
-        <motion.figcaption
-          className={styles.legenda}
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0, transition: { delay: 0.15, duration: 0.3 } }}
-          exit={{ opacity: 0, y: 12, transition: { duration: 0.15 } }}
-        >
+        <figcaption className={styles.legenda}>
           <span className={styles.numero} aria-hidden="true">
             {numero} /
           </span>
@@ -93,20 +81,12 @@ export default function VisualizadorImagem({ id, numero, titulo, impacto, imagem
             {titulo}
           </span>
           {impacto && <span className={styles.impacto}>▲ {impacto}</span>}
-        </motion.figcaption>
+        </figcaption>
       </figure>
 
-      <motion.button
-        ref={botaoFecharRef}
-        type="button"
-        className={`${styles.fechar} cursor-target`}
-        onClick={onFechar}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1, transition: { delay: 0.1 } }}
-        exit={{ opacity: 0, transition: { duration: 0.1 } }}
-      >
+      <button ref={botaoFecharRef} type="button" className={`${styles.fechar} cursor-target`} onClick={onFechar}>
         Fechar <kbd aria-hidden="true">Esc</kbd>
-      </motion.button>
+      </button>
     </div>,
     document.body,
   )

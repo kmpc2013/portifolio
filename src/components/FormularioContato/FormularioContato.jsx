@@ -5,38 +5,62 @@ import styles from './FormularioContato.module.css'
 
 const vazio = { nome: '', email: '', mensagem: '' }
 
+// Texto do <output> em cada situação do envio
+const avisos = {
+  ocioso: '',
+  enviando: 'Enviando…',
+  enviado: 'Mensagem enviada! Respondo em breve.',
+  erro: 'Não foi possível enviar agora. Tente de novo ou escreva direto para',
+}
+
 export default function FormularioContato() {
   // Formulário controlado: o React guarda o valor de cada campo no estado
   const [campos, setCampos] = useState(vazio)
   const [erros, setErros] = useState({})
-  const [enviado, setEnviado] = useState(false)
+  // ocioso → enviando → enviado | erro
+  const [situacao, setSituacao] = useState('ocioso')
 
-  // Um único handler para todos os campos: usa o "name" do input como chave
+  // Um único handler para todos os campos: usa o "name" do input como chave.
+  // A forma funcional parte sempre do estado mais recente, mesmo com várias atualizações seguidas.
   function aoDigitar(evento) {
     const { name, value } = evento.target
-    setCampos({ ...campos, [name]: value })
+    setCampos((atual) => ({ ...atual, [name]: value }))
   }
 
-  function aoEnviar(evento) {
+  async function aoEnviar(evento) {
     // Sem isso o navegador recarregaria a página ao enviar o formulário
     evento.preventDefault()
 
     const novosErros = validar(campos)
     setErros(novosErros)
     if (Object.keys(novosErros).length > 0) {
-      setEnviado(false)
+      setSituacao('ocioso')
       return
     }
 
-    // Sem back-end: monta um link mailto: e abre o programa de e-mail do visitante.
-    // encodeURIComponent troca espaços, acentos e quebras de linha por códigos válidos na URL.
-    const assunto = encodeURIComponent(`Contato pelo portfólio - ${campos.nome}`)
-    const corpo = encodeURIComponent(`${campos.mensagem}\n\n${campos.nome} (${campos.email})`)
-    window.location.href = `mailto:${perfil.email}?subject=${assunto}&body=${corpo}`
+    // _gotcha: campo invisível. Gente não preenche; robô de spam preenche, e o Formspree descarta.
+    const armadilha = evento.target.elements._gotcha?.value ?? ''
 
-    setEnviado(true)
-    setCampos(vazio)
+    setSituacao('enviando')
+    try {
+      // O site é estático: quem recebe a mensagem e manda para o meu e-mail é o Formspree
+      const resposta = await fetch(perfil.formulario, {
+        method: 'POST',
+        headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...campos, _subject: `Contato pelo portfólio - ${campos.nome}`, _gotcha: armadilha }),
+      })
+      // fetch só rejeita em falha de rede: status 4xx/5xx precisa ser conferido aqui
+      if (!resposta.ok) throw new Error(`HTTP ${resposta.status}`)
+
+      setSituacao('enviado')
+      setCampos(vazio)
+    } catch {
+      // Mantém o que a pessoa digitou para ela poder tentar de novo
+      setSituacao('erro')
+    }
   }
+
+  const enviando = situacao === 'enviando'
 
   return (
     // noValidate desliga os balões nativos do navegador: quem valida é o React
@@ -78,14 +102,23 @@ export default function FormularioContato() {
         {erros.mensagem && <span className={styles.erro}>{erros.mensagem}</span>}
       </label>
 
-      <button type="submit" className={`${styles.botao} cursor-target`}>
-        Enviar mensagem <span aria-hidden="true">→</span>
+      {/* Armadilha anti-spam: fora da tela, do teclado e do leitor de tela */}
+      <input name="_gotcha" className={styles.armadilha} tabIndex={-1} autoComplete="off" aria-hidden="true" />
+
+      <button type="submit" className={`${styles.botao} cursor-target`} disabled={enviando}>
+        {enviando ? 'Enviando…' : 'Enviar mensagem'} <span aria-hidden="true">→</span>
       </button>
 
-      {/* role="status" faz o leitor de tela anunciar a mensagem quando ela aparece */}
-      <p role="status" className={styles.sucesso}>
-        {enviado && 'Seu programa de e-mail foi aberto com a mensagem pronta. É só enviar!'}
-      </p>
+      {/* <output> tem papel "status": o leitor de tela anuncia a mensagem quando ela aparece */}
+      <output className={situacao === 'erro' ? styles.falha : styles.sucesso}>
+        {avisos[situacao]}
+        {situacao === 'erro' && (
+          <>
+            {' '}
+            <a href={`mailto:${perfil.email}`}>{perfil.email}</a>.
+          </>
+        )}
+      </output>
     </form>
   )
 }

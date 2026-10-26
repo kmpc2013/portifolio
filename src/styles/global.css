@@ -98,3 +98,10 @@ section[id] {
     scroll-behavior: auto;
   }
 }
+
+/* View Transition da imagem dos projetos (miniatura ⇄ ampliada): um pouco mais lenta que o padrão
+   e com freada no fim, para o movimento ser acompanhável */
+::view-transition-group(*) {
+  animation-duration: 0.4s;
+  animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+}

@@ -1,4 +1,5 @@
 // Imagens importadas: o Vite gera o caminho final (com hash) no build.
+import imgPortfolio from '../assets/projetos/portfolio-pipeline.svg'
 import imgTodo from '../assets/projetos/todo-nextjs.svg'
 import imgPetStyle from '../assets/projetos/pet-style.svg'
 import imgMicrofrontends from '../assets/projetos/microfrontends.svg'
@@ -10,7 +11,21 @@ const CURSO = 'Projeto do curso · EBAC'
 // repositorio e demo: links externos; demo: null esconde o botão "Ver online".
 // status: opcional; quando existe, aparece acima do título (ex.: CURSO ou "Em andamento").
 // impacto: opcional; resultado em número (ex.: "−79% de peso"), aparece abaixo do título.
+// relatorio: opcional; link para um PDF com a evidência do resultado.
 export const projetos = [
+  {
+    id: 'portfolio-pipeline',
+    titulo: 'Este portfólio: pipeline de deploy e performance medida',
+    impacto: 'Performance mobile de 35 para 91 e TBT de 6,5 s para 0,14 s',
+    descricao:
+      'O próprio site tratado como um serviço em produção. Cada push passa por um pipeline no GitHub Actions (lint, formatação, testes e build) e qualquer falha bloqueia o deploy no GitHub Pages. A performance é medida por um script em Node.js que roda o Lighthouse 3 vezes em mobile e desktop e registra as medianas. Cada otimização (code splitting, carregamento após interação, fontes locais, troca de biblioteca por API nativa) só foi mantida quando a medição confirmou o ganho.',
+    imagem: imgPortfolio,
+    tecnologias: ['GitHub Actions', 'GitHub Pages', 'Lighthouse', 'Node.js', 'Vite', 'React'],
+    repositorio: 'https://github.com/kmpc2013/portifolio',
+    demo: null,
+    relatorio: `${import.meta.env.BASE_URL}relatorio-performance-portfolio.pdf`,
+    status: CURSO,
+  },
   {
     id: 'todo-nextjs',
     titulo: 'To-Do List com testes unitários em Next.js',

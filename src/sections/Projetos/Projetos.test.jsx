@@ -1,16 +1,11 @@
 import { render, screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
-import { describe, expect, it, vi } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import { projetos } from '../../data/projetos'
 import Projetos from './Projetos'
 
-// No jsdom nada é desenhado, então a animação de saída compartilhada (layoutId) nunca termina
-// e o AnimatePresence não remove o diálogo. Aqui ele vira um "repasse": o que sai, some na hora.
-// O resto do motion continua real.
-vi.mock('motion/react', async (importOriginal) => ({
-  ...(await importOriginal()),
-  AnimatePresence: ({ children }) => children,
-}))
+// O jsdom não tem document.startViewTransition: os testes passam pelo caminho sem animação,
+// o mesmo de quem usa "reduzir movimento" ou um navegador sem suporte.
 
 // Botão da miniatura do primeiro projeto ("Ampliar o diagrama do projeto ...")
 const primeiro = projetos[0]

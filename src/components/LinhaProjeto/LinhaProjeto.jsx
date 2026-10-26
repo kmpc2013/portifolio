@@ -1,4 +1,3 @@
-import { motion } from 'motion/react'
 import Etiqueta from '../Etiqueta/Etiqueta'
 import styles from './LinhaProjeto.module.css'
 
@@ -15,7 +14,9 @@ export default function LinhaProjeto({
   tecnologias,
   repositorio,
   demo,
+  relatorio,
   status,
+  ampliado = false,
   onAmpliar,
 }) {
   return (
@@ -68,6 +69,12 @@ export default function LinhaProjeto({
               Ver online <span aria-hidden="true">↗</span>
             </a>
           )}
+          {/* Evidência do resultado (opcional): relatório em PDF servido pelo próprio site */}
+          {relatorio && (
+            <a href={relatorio} target="_blank" rel="noreferrer" className={`${styles.link} cursor-target`}>
+              Relatório (PDF) <span aria-hidden="true">↗</span>
+            </a>
+          )}
         </div>
       </div>
 
@@ -81,10 +88,11 @@ export default function LinhaProjeto({
         aria-label={`Ampliar o diagrama do projeto ${titulo}`}
         data-cursor-label="ampliar"
       >
-        {/* layoutId liga esta imagem à versão ampliada: o motion anima uma até a outra */}
-        <motion.span layoutId={`imagem-${id}`} className={styles.camadaImagem}>
+        {/* view-transition-name liga esta imagem à versão ampliada: o navegador anima uma até a outra.
+            Enquanto ela está ampliada, o nome fica só no visualizador (o nome precisa ser único na tela). */}
+        <span className={styles.camadaImagem} style={{ viewTransitionName: ampliado ? 'none' : `imagem-${id}` }}>
           <img src={imagem} alt={`Diagrama do projeto ${titulo}`} className={styles.imagem} loading="lazy" />
-        </motion.span>
+        </span>
         <span className={styles.selo} aria-hidden="true">
           Ampliar ⤢
         </span>

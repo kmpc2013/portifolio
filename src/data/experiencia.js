@@ -8,7 +8,7 @@ export const experiencia = [
     conquistas: [
       'Liderança técnica dos projetos de inovação e automação, da concepção à implantação',
       'Correlação de eventos com LLM: −70% de ruído operacional',
-      'SSO com Keycloak em +6 sistemas para +150 usuários'
+      'SSO com Keycloak em +6 sistemas para +150 usuários',
     ],
   },
   {

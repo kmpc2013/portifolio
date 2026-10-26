@@ -1,0 +1,1508 @@
+{
+  "rotulo": "etapa4",
+  "url": "http://localhost:3022/",
+  "lighthouse": "lighthouse@13.5.0",
+  "data": "2026-10-26T21:40:47.361Z",
+  "resultados": {
+    "mobile": [
+      {
+        "arquivo": "docs\\relatorios\\etapas\\4-hero-estatico\\etapa4-mobile-1.report.html",
+        "performance": 85,
+        "acessibilidade": 100,
+        "boasPraticas": 100,
+        "seo": 100,
+        "fcp": 2121.779,
+        "lcp": 3251.1348,
+        "tbt": 278.35580000000004,
+        "cls": 0,
+        "si": 2121.779,
+        "pesoKB": 342.0380859375,
+        "requisicoes": 16,
+        "trabalhoJsMs": 495.34800000000223,
+        "elementoLcp": "<p class=\"_resumo_148bw_201\">",
+        "fasesLcp": [
+          {
+            "fase": "Time to first byte",
+            "ms": 10.168
+          },
+          {
+            "fase": "Element render delay",
+            "ms": 409.076
+          }
+        ],
+        "listaRequisicoes": [
+          {
+            "url": "http://localhost:3022/",
+            "tipo": "Document",
+            "kb": 1.2734375,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3022/assets/bricolage-grotesque-latin-opsz-normal-Cre6nC2_.woff2",
+            "tipo": "Font",
+            "kb": 75.396484375,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/index-E8FV5EXf.js",
+            "tipo": "Script",
+            "kb": 122.6708984375,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/react-DvXU6kJ2.js",
+            "tipo": "Script",
+            "kb": 3.5693359375,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/jsx-runtime-BOy446NO.js",
+            "tipo": "Script",
+            "kb": 0.7431640625,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/index-D2Te14PK.css",
+            "tipo": "Stylesheet",
+            "kb": 8.470703125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter i…",
+            "tipo": "Image",
+            "kb": 0,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3022/assets/ScrollVelocity-Cap0NbR0.js",
+            "tipo": "Script",
+            "kb": 7.1474609375,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/use-reduced-motion-CCtVKIrI.js",
+            "tipo": "Script",
+            "kb": 0.6953125,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/ScrollVelocity-C-6PR3f7.css",
+            "tipo": "Stylesheet",
+            "kb": 0.626953125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3022/assets/CurvedLoop-DfusgJPQ.js",
+            "tipo": "Script",
+            "kb": 3.501953125,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/CurvedLoop-BcWzG1NS.css",
+            "tipo": "Stylesheet",
+            "kb": 0.57421875,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3022/profile-pic-7-96x96.png",
+            "tipo": "Other",
+            "kb": 5.953125,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/hero-poster-DxnjO1_a.webp",
+            "tipo": "Image",
+            "kb": 33.9248046875,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/jetbrains-mono-latin-wght-normal-B9CIFXIH.woff2",
+            "tipo": "Font",
+            "kb": 39.7626953125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3022/assets/foto-perfil-tKIsezCZ.webp",
+            "tipo": "Image",
+            "kb": 37.7275390625,
+            "prioridade": "Low"
+          }
+        ],
+        "reprovadas": [
+          {
+            "categoria": "performance",
+            "id": "first-contentful-paint",
+            "titulo": "First Contentful Paint",
+            "valor": "2.1 s"
+          },
+          {
+            "categoria": "performance",
+            "id": "largest-contentful-paint",
+            "titulo": "Largest Contentful Paint",
+            "valor": "3.3 s"
+          },
+          {
+            "categoria": "performance",
+            "id": "total-blocking-time",
+            "titulo": "Total Blocking Time",
+            "valor": "280 ms"
+          },
+          {
+            "categoria": "performance",
+            "id": "cache-insight",
+            "titulo": "Use efficient cache lifetimes",
+            "valor": "Est savings of 335 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "forced-reflow-insight",
+            "titulo": "Forced reflow",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "image-delivery-insight",
+            "titulo": "Improve image delivery",
+            "valor": "Est savings of 21 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "network-dependency-tree-insight",
+            "titulo": "Network dependency tree",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "render-blocking-insight",
+            "titulo": "Render-blocking requests",
+            "valor": "Est savings of 300 ms"
+          },
+          {
+            "categoria": "performance",
+            "id": "max-potential-fid",
+            "titulo": "Max Potential First Input Delay",
+            "valor": "300 ms"
+          },
+          {
+            "categoria": "performance",
+            "id": "unused-javascript",
+            "titulo": "Reduce unused JavaScript",
+            "valor": "Est savings of 61 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "mainthread-work-breakdown",
+            "titulo": "Minimize main-thread work",
+            "valor": "2.2 s"
+          }
+        ],
+        "navegador": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+        "versao": "13.5.0"
+      },
+      {
+        "arquivo": "docs\\relatorios\\etapas\\4-hero-estatico\\etapa4-mobile-2.report.html",
+        "performance": 86,
+        "acessibilidade": 100,
+        "boasPraticas": 100,
+        "seo": 100,
+        "fcp": 2101.8732499999996,
+        "lcp": 3229.8732499999996,
+        "tbt": 270.37465,
+        "cls": 0,
+        "si": 2101.8732499999996,
+        "pesoKB": 342.0380859375,
+        "requisicoes": 16,
+        "trabalhoJsMs": 409.86800000000176,
+        "elementoLcp": "<p class=\"_resumo_148bw_201\">",
+        "fasesLcp": [
+          {
+            "fase": "Time to first byte",
+            "ms": 10.026
+          },
+          {
+            "fase": "Element render delay",
+            "ms": 399.317
+          }
+        ],
+        "listaRequisicoes": [
+          {
+            "url": "http://localhost:3022/",
+            "tipo": "Document",
+            "kb": 1.2734375,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3022/assets/bricolage-grotesque-latin-opsz-normal-Cre6nC2_.woff2",
+            "tipo": "Font",
+            "kb": 75.396484375,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/index-E8FV5EXf.js",
+            "tipo": "Script",
+            "kb": 122.6708984375,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/react-DvXU6kJ2.js",
+            "tipo": "Script",
+            "kb": 3.5693359375,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/jsx-runtime-BOy446NO.js",
+            "tipo": "Script",
+            "kb": 0.7431640625,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/index-D2Te14PK.css",
+            "tipo": "Stylesheet",
+            "kb": 8.470703125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter i…",
+            "tipo": "Image",
+            "kb": 0,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3022/assets/ScrollVelocity-Cap0NbR0.js",
+            "tipo": "Script",
+            "kb": 7.1474609375,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/use-reduced-motion-CCtVKIrI.js",
+            "tipo": "Script",
+            "kb": 0.6953125,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/ScrollVelocity-C-6PR3f7.css",
+            "tipo": "Stylesheet",
+            "kb": 0.626953125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3022/assets/CurvedLoop-DfusgJPQ.js",
+            "tipo": "Script",
+            "kb": 3.501953125,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/CurvedLoop-BcWzG1NS.css",
+            "tipo": "Stylesheet",
+            "kb": 0.57421875,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3022/profile-pic-7-96x96.png",
+            "tipo": "Other",
+            "kb": 5.953125,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/hero-poster-DxnjO1_a.webp",
+            "tipo": "Image",
+            "kb": 33.9248046875,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/jetbrains-mono-latin-wght-normal-B9CIFXIH.woff2",
+            "tipo": "Font",
+            "kb": 39.7626953125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3022/assets/foto-perfil-tKIsezCZ.webp",
+            "tipo": "Image",
+            "kb": 37.7275390625,
+            "prioridade": "Low"
+          }
+        ],
+        "reprovadas": [
+          {
+            "categoria": "performance",
+            "id": "first-contentful-paint",
+            "titulo": "First Contentful Paint",
+            "valor": "2.1 s"
+          },
+          {
+            "categoria": "performance",
+            "id": "largest-contentful-paint",
+            "titulo": "Largest Contentful Paint",
+            "valor": "3.2 s"
+          },
+          {
+            "categoria": "performance",
+            "id": "total-blocking-time",
+            "titulo": "Total Blocking Time",
+            "valor": "270 ms"
+          },
+          {
+            "categoria": "performance",
+            "id": "cache-insight",
+            "titulo": "Use efficient cache lifetimes",
+            "valor": "Est savings of 335 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "forced-reflow-insight",
+            "titulo": "Forced reflow",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "image-delivery-insight",
+            "titulo": "Improve image delivery",
+            "valor": "Est savings of 21 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "network-dependency-tree-insight",
+            "titulo": "Network dependency tree",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "render-blocking-insight",
+            "titulo": "Render-blocking requests",
+            "valor": "Est savings of 150 ms"
+          },
+          {
+            "categoria": "performance",
+            "id": "max-potential-fid",
+            "titulo": "Max Potential First Input Delay",
+            "valor": "330 ms"
+          },
+          {
+            "categoria": "performance",
+            "id": "unused-javascript",
+            "titulo": "Reduce unused JavaScript",
+            "valor": "Est savings of 61 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "mainthread-work-breakdown",
+            "titulo": "Minimize main-thread work",
+            "valor": "2.0 s"
+          }
+        ],
+        "navegador": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+        "versao": "13.5.0"
+      },
+      {
+        "arquivo": "docs\\relatorios\\etapas\\4-hero-estatico\\etapa4-mobile-3.report.html",
+        "performance": 84,
+        "acessibilidade": 100,
+        "boasPraticas": 100,
+        "seo": 100,
+        "fcp": 2101.998,
+        "lcp": 3276.4979999999996,
+        "tbt": 292.29960000000005,
+        "cls": 0,
+        "si": 2101.998,
+        "pesoKB": 342.0380859375,
+        "requisicoes": 16,
+        "trabalhoJsMs": 554.5800000000015,
+        "elementoLcp": "<p class=\"_resumo_148bw_201\">",
+        "fasesLcp": [
+          {
+            "fase": "Time to first byte",
+            "ms": 9.192
+          },
+          {
+            "fase": "Element render delay",
+            "ms": 451.259
+          }
+        ],
+        "listaRequisicoes": [
+          {
+            "url": "http://localhost:3022/",
+            "tipo": "Document",
+            "kb": 1.2734375,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3022/assets/bricolage-grotesque-latin-opsz-normal-Cre6nC2_.woff2",
+            "tipo": "Font",
+            "kb": 75.396484375,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/index-E8FV5EXf.js",
+            "tipo": "Script",
+            "kb": 122.6708984375,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/react-DvXU6kJ2.js",
+            "tipo": "Script",
+            "kb": 3.5693359375,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/jsx-runtime-BOy446NO.js",
+            "tipo": "Script",
+            "kb": 0.7431640625,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/index-D2Te14PK.css",
+            "tipo": "Stylesheet",
+            "kb": 8.470703125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter i…",
+            "tipo": "Image",
+            "kb": 0,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3022/assets/ScrollVelocity-Cap0NbR0.js",
+            "tipo": "Script",
+            "kb": 7.1474609375,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/use-reduced-motion-CCtVKIrI.js",
+            "tipo": "Script",
+            "kb": 0.6953125,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/ScrollVelocity-C-6PR3f7.css",
+            "tipo": "Stylesheet",
+            "kb": 0.626953125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3022/assets/CurvedLoop-DfusgJPQ.js",
+            "tipo": "Script",
+            "kb": 3.501953125,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/CurvedLoop-BcWzG1NS.css",
+            "tipo": "Stylesheet",
+            "kb": 0.57421875,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3022/profile-pic-7-96x96.png",
+            "tipo": "Other",
+            "kb": 5.953125,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/hero-poster-DxnjO1_a.webp",
+            "tipo": "Image",
+            "kb": 33.9248046875,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/jetbrains-mono-latin-wght-normal-B9CIFXIH.woff2",
+            "tipo": "Font",
+            "kb": 39.7626953125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3022/assets/foto-perfil-tKIsezCZ.webp",
+            "tipo": "Image",
+            "kb": 37.7275390625,
+            "prioridade": "Low"
+          }
+        ],
+        "reprovadas": [
+          {
+            "categoria": "performance",
+            "id": "first-contentful-paint",
+            "titulo": "First Contentful Paint",
+            "valor": "2.1 s"
+          },
+          {
+            "categoria": "performance",
+            "id": "largest-contentful-paint",
+            "titulo": "Largest Contentful Paint",
+            "valor": "3.3 s"
+          },
+          {
+            "categoria": "performance",
+            "id": "total-blocking-time",
+            "titulo": "Total Blocking Time",
+            "valor": "290 ms"
+          },
+          {
+            "categoria": "performance",
+            "id": "cache-insight",
+            "titulo": "Use efficient cache lifetimes",
+            "valor": "Est savings of 335 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "forced-reflow-insight",
+            "titulo": "Forced reflow",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "image-delivery-insight",
+            "titulo": "Improve image delivery",
+            "valor": "Est savings of 21 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "network-dependency-tree-insight",
+            "titulo": "Network dependency tree",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "render-blocking-insight",
+            "titulo": "Render-blocking requests",
+            "valor": "Est savings of 150 ms"
+          },
+          {
+            "categoria": "performance",
+            "id": "max-potential-fid",
+            "titulo": "Max Potential First Input Delay",
+            "valor": "360 ms"
+          },
+          {
+            "categoria": "performance",
+            "id": "unused-javascript",
+            "titulo": "Reduce unused JavaScript",
+            "valor": "Est savings of 61 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "mainthread-work-breakdown",
+            "titulo": "Minimize main-thread work",
+            "valor": "2.8 s"
+          }
+        ],
+        "navegador": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+        "versao": "13.5.0"
+      }
+    ],
+    "desktop": [
+      {
+        "arquivo": "docs\\relatorios\\etapas\\4-hero-estatico\\etapa4-desktop-1.report.html",
+        "performance": 100,
+        "acessibilidade": 100,
+        "boasPraticas": 100,
+        "seo": 100,
+        "fcp": 465.32175000000007,
+        "lcp": 712.3217500000001,
+        "tbt": 10,
+        "cls": 0.0003418828156174612,
+        "si": 529.3302299793525,
+        "pesoKB": 347.26171875,
+        "requisicoes": 19,
+        "trabalhoJsMs": 99.46000000000036,
+        "elementoLcp": "<span class=\"_linhaNome_148bw_155\">",
+        "fasesLcp": [
+          {
+            "fase": "Time to first byte",
+            "ms": 7.617999877929687
+          },
+          {
+            "fase": "Element render delay",
+            "ms": 399.37000012207034
+          }
+        ],
+        "listaRequisicoes": [
+          {
+            "url": "http://localhost:3022/",
+            "tipo": "Document",
+            "kb": 1.2734375,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3022/assets/bricolage-grotesque-latin-opsz-normal-Cre6nC2_.woff2",
+            "tipo": "Font",
+            "kb": 75.396484375,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/index-E8FV5EXf.js",
+            "tipo": "Script",
+            "kb": 122.6708984375,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/react-DvXU6kJ2.js",
+            "tipo": "Script",
+            "kb": 3.5693359375,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/jsx-runtime-BOy446NO.js",
+            "tipo": "Script",
+            "kb": 0.7431640625,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/index-D2Te14PK.css",
+            "tipo": "Stylesheet",
+            "kb": 8.470703125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter i…",
+            "tipo": "Image",
+            "kb": 0,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3022/assets/TargetCursor-Cn9njnWI.js",
+            "tipo": "Script",
+            "kb": 3.1005859375,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/TargetCursor-DFmyNgbJ.css",
+            "tipo": "Stylesheet",
+            "kb": 0.89453125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3022/assets/ScrollVelocity-Cap0NbR0.js",
+            "tipo": "Script",
+            "kb": 7.1474609375,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/use-reduced-motion-CCtVKIrI.js",
+            "tipo": "Script",
+            "kb": 0.6953125,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/ScrollVelocity-C-6PR3f7.css",
+            "tipo": "Stylesheet",
+            "kb": 0.626953125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3022/assets/CurvedLoop-DfusgJPQ.js",
+            "tipo": "Script",
+            "kb": 3.501953125,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/CurvedLoop-BcWzG1NS.css",
+            "tipo": "Stylesheet",
+            "kb": 0.57421875,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3022/profile-pic-7-96x96.png",
+            "tipo": "Other",
+            "kb": 5.953125,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/hero-poster-DxnjO1_a.webp",
+            "tipo": "Image",
+            "kb": 33.9248046875,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/jetbrains-mono-latin-wght-normal-B9CIFXIH.woff2",
+            "tipo": "Font",
+            "kb": 39.7626953125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3022/assets/foto-perfil-tKIsezCZ.webp",
+            "tipo": "Image",
+            "kb": 37.7275390625,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3022/assets/todo-nextjs-CjKsiMOd.svg",
+            "tipo": "Image",
+            "kb": 1.228515625,
+            "prioridade": "Low"
+          }
+        ],
+        "reprovadas": [
+          {
+            "categoria": "performance",
+            "id": "cache-insight",
+            "titulo": "Use efficient cache lifetimes",
+            "valor": "Est savings of 340 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "forced-reflow-insight",
+            "titulo": "Forced reflow",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "image-delivery-insight",
+            "titulo": "Improve image delivery",
+            "valor": "Est savings of 21 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "network-dependency-tree-insight",
+            "titulo": "Network dependency tree",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "render-blocking-insight",
+            "titulo": "Render-blocking requests",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "unused-javascript",
+            "titulo": "Reduce unused JavaScript",
+            "valor": "Est savings of 60 KiB"
+          }
+        ],
+        "navegador": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+        "versao": "13.5.0"
+      },
+      {
+        "arquivo": "docs\\relatorios\\etapas\\4-hero-estatico\\etapa4-desktop-2.report.html",
+        "performance": 100,
+        "acessibilidade": 100,
+        "boasPraticas": 100,
+        "seo": 100,
+        "fcp": 462.87249999999995,
+        "lcp": 678.6469999999999,
+        "tbt": 14,
+        "cls": 0.0003418828156174612,
+        "si": 487.9162150976737,
+        "pesoKB": 347.26171875,
+        "requisicoes": 19,
+        "trabalhoJsMs": 101.6160000000008,
+        "elementoLcp": "<span class=\"_linhaNome_148bw_155\">",
+        "fasesLcp": [
+          {
+            "fase": "Time to first byte",
+            "ms": 7.06
+          },
+          {
+            "fase": "Element render delay",
+            "ms": 358.398
+          }
+        ],
+        "listaRequisicoes": [
+          {
+            "url": "http://localhost:3022/",
+            "tipo": "Document",
+            "kb": 1.2734375,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3022/assets/bricolage-grotesque-latin-opsz-normal-Cre6nC2_.woff2",
+            "tipo": "Font",
+            "kb": 75.396484375,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/index-E8FV5EXf.js",
+            "tipo": "Script",
+            "kb": 122.6708984375,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/react-DvXU6kJ2.js",
+            "tipo": "Script",
+            "kb": 3.5693359375,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/jsx-runtime-BOy446NO.js",
+            "tipo": "Script",
+            "kb": 0.7431640625,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/index-D2Te14PK.css",
+            "tipo": "Stylesheet",
+            "kb": 8.470703125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter i…",
+            "tipo": "Image",
+            "kb": 0,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3022/assets/TargetCursor-Cn9njnWI.js",
+            "tipo": "Script",
+            "kb": 3.1005859375,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/TargetCursor-DFmyNgbJ.css",
+            "tipo": "Stylesheet",
+            "kb": 0.89453125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3022/assets/ScrollVelocity-Cap0NbR0.js",
+            "tipo": "Script",
+            "kb": 7.1474609375,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/use-reduced-motion-CCtVKIrI.js",
+            "tipo": "Script",
+            "kb": 0.6953125,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/ScrollVelocity-C-6PR3f7.css",
+            "tipo": "Stylesheet",
+            "kb": 0.626953125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3022/assets/CurvedLoop-DfusgJPQ.js",
+            "tipo": "Script",
+            "kb": 3.501953125,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/CurvedLoop-BcWzG1NS.css",
+            "tipo": "Stylesheet",
+            "kb": 0.57421875,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3022/profile-pic-7-96x96.png",
+            "tipo": "Other",
+            "kb": 5.953125,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/hero-poster-DxnjO1_a.webp",
+            "tipo": "Image",
+            "kb": 33.9248046875,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/jetbrains-mono-latin-wght-normal-B9CIFXIH.woff2",
+            "tipo": "Font",
+            "kb": 39.7626953125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3022/assets/foto-perfil-tKIsezCZ.webp",
+            "tipo": "Image",
+            "kb": 37.7275390625,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3022/assets/todo-nextjs-CjKsiMOd.svg",
+            "tipo": "Image",
+            "kb": 1.228515625,
+            "prioridade": "Low"
+          }
+        ],
+        "reprovadas": [
+          {
+            "categoria": "performance",
+            "id": "cache-insight",
+            "titulo": "Use efficient cache lifetimes",
+            "valor": "Est savings of 340 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "image-delivery-insight",
+            "titulo": "Improve image delivery",
+            "valor": "Est savings of 21 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "network-dependency-tree-insight",
+            "titulo": "Network dependency tree",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "render-blocking-insight",
+            "titulo": "Render-blocking requests",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "unused-javascript",
+            "titulo": "Reduce unused JavaScript",
+            "valor": "Est savings of 60 KiB"
+          }
+        ],
+        "navegador": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+        "versao": "13.5.0"
+      },
+      {
+        "arquivo": "docs\\relatorios\\etapas\\4-hero-estatico\\etapa4-desktop-3.report.html",
+        "performance": 100,
+        "acessibilidade": 100,
+        "boasPraticas": 100,
+        "seo": 100,
+        "fcp": 467.93899999999996,
+        "lcp": 730.9390000000001,
+        "tbt": 24.5,
+        "cls": 0.0003418828156174612,
+        "si": 581.054340217198,
+        "pesoKB": 347.26171875,
+        "requisicoes": 19,
+        "trabalhoJsMs": 133.74200000000053,
+        "elementoLcp": "<span class=\"_linhaNome_148bw_155\">",
+        "fasesLcp": [
+          {
+            "fase": "Time to first byte",
+            "ms": 6.584
+          },
+          {
+            "fase": "Element render delay",
+            "ms": 518.208
+          }
+        ],
+        "listaRequisicoes": [
+          {
+            "url": "http://localhost:3022/",
+            "tipo": "Document",
+            "kb": 1.2734375,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3022/assets/bricolage-grotesque-latin-opsz-normal-Cre6nC2_.woff2",
+            "tipo": "Font",
+            "kb": 75.396484375,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/index-E8FV5EXf.js",
+            "tipo": "Script",
+            "kb": 122.6708984375,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/react-DvXU6kJ2.js",
+            "tipo": "Script",
+            "kb": 3.5693359375,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/jsx-runtime-BOy446NO.js",
+            "tipo": "Script",
+            "kb": 0.7431640625,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/index-D2Te14PK.css",
+            "tipo": "Stylesheet",
+            "kb": 8.470703125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter i…",
+            "tipo": "Image",
+            "kb": 0,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3022/assets/TargetCursor-Cn9njnWI.js",
+            "tipo": "Script",
+            "kb": 3.1005859375,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/TargetCursor-DFmyNgbJ.css",
+            "tipo": "Stylesheet",
+            "kb": 0.89453125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3022/assets/ScrollVelocity-Cap0NbR0.js",
+            "tipo": "Script",
+            "kb": 7.1474609375,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/use-reduced-motion-CCtVKIrI.js",
+            "tipo": "Script",
+            "kb": 0.6953125,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/ScrollVelocity-C-6PR3f7.css",
+            "tipo": "Stylesheet",
+            "kb": 0.626953125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3022/assets/CurvedLoop-DfusgJPQ.js",
+            "tipo": "Script",
+            "kb": 3.501953125,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/CurvedLoop-BcWzG1NS.css",
+            "tipo": "Stylesheet",
+            "kb": 0.57421875,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3022/profile-pic-7-96x96.png",
+            "tipo": "Other",
+            "kb": 5.953125,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/hero-poster-DxnjO1_a.webp",
+            "tipo": "Image",
+            "kb": 33.9248046875,
+            "prioridade": "High"
+          },
+          {
+            "url": "http://localhost:3022/assets/jetbrains-mono-latin-wght-normal-B9CIFXIH.woff2",
+            "tipo": "Font",
+            "kb": 39.7626953125,
+            "prioridade": "VeryHigh"
+          },
+          {
+            "url": "http://localhost:3022/assets/foto-perfil-tKIsezCZ.webp",
+            "tipo": "Image",
+            "kb": 37.7275390625,
+            "prioridade": "Low"
+          },
+          {
+            "url": "http://localhost:3022/assets/todo-nextjs-CjKsiMOd.svg",
+            "tipo": "Image",
+            "kb": 1.228515625,
+            "prioridade": "Low"
+          }
+        ],
+        "reprovadas": [
+          {
+            "categoria": "performance",
+            "id": "cache-insight",
+            "titulo": "Use efficient cache lifetimes",
+            "valor": "Est savings of 340 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "forced-reflow-insight",
+            "titulo": "Forced reflow",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "image-delivery-insight",
+            "titulo": "Improve image delivery",
+            "valor": "Est savings of 21 KiB"
+          },
+          {
+            "categoria": "performance",
+            "id": "network-dependency-tree-insight",
+            "titulo": "Network dependency tree",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "render-blocking-insight",
+            "titulo": "Render-blocking requests",
+            "valor": ""
+          },
+          {
+            "categoria": "performance",
+            "id": "unused-javascript",
+            "titulo": "Reduce unused JavaScript",
+            "valor": "Est savings of 60 KiB"
+          }
+        ],
+        "navegador": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+        "versao": "13.5.0"
+      }
+    ]
+  },
+  "medianas": {
+    "mobile": {
+      "execucaoMediana": "docs\\relatorios\\etapas\\4-hero-estatico\\etapa4-mobile-1.report.html",
+      "arquivo": "docs\\relatorios\\etapas\\4-hero-estatico\\etapa4-mobile-1.report.html",
+      "performance": 85,
+      "acessibilidade": 100,
+      "boasPraticas": 100,
+      "seo": 100,
+      "fcp": 2101.998,
+      "lcp": 3251.1348,
+      "tbt": 278.35580000000004,
+      "cls": 0,
+      "si": 2101.998,
+      "pesoKB": 342.0380859375,
+      "requisicoes": 16,
+      "trabalhoJsMs": 495.34800000000223,
+      "elementoLcp": "<p class=\"_resumo_148bw_201\">",
+      "fasesLcp": [
+        {
+          "fase": "Time to first byte",
+          "ms": 10.168
+        },
+        {
+          "fase": "Element render delay",
+          "ms": 409.076
+        }
+      ],
+      "listaRequisicoes": [
+        {
+          "url": "http://localhost:3022/",
+          "tipo": "Document",
+          "kb": 1.2734375,
+          "prioridade": "VeryHigh"
+        },
+        {
+          "url": "http://localhost:3022/assets/bricolage-grotesque-latin-opsz-normal-Cre6nC2_.woff2",
+          "tipo": "Font",
+          "kb": 75.396484375,
+          "prioridade": "High"
+        },
+        {
+          "url": "http://localhost:3022/assets/index-E8FV5EXf.js",
+          "tipo": "Script",
+          "kb": 122.6708984375,
+          "prioridade": "High"
+        },
+        {
+          "url": "http://localhost:3022/assets/react-DvXU6kJ2.js",
+          "tipo": "Script",
+          "kb": 3.5693359375,
+          "prioridade": "High"
+        },
+        {
+          "url": "http://localhost:3022/assets/jsx-runtime-BOy446NO.js",
+          "tipo": "Script",
+          "kb": 0.7431640625,
+          "prioridade": "High"
+        },
+        {
+          "url": "http://localhost:3022/assets/index-D2Te14PK.css",
+          "tipo": "Stylesheet",
+          "kb": 8.470703125,
+          "prioridade": "VeryHigh"
+        },
+        {
+          "url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter i…",
+          "tipo": "Image",
+          "kb": 0,
+          "prioridade": "Low"
+        },
+        {
+          "url": "http://localhost:3022/assets/ScrollVelocity-Cap0NbR0.js",
+          "tipo": "Script",
+          "kb": 7.1474609375,
+          "prioridade": "High"
+        },
+        {
+          "url": "http://localhost:3022/assets/use-reduced-motion-CCtVKIrI.js",
+          "tipo": "Script",
+          "kb": 0.6953125,
+          "prioridade": "High"
+        },
+        {
+          "url": "http://localhost:3022/assets/ScrollVelocity-C-6PR3f7.css",
+          "tipo": "Stylesheet",
+          "kb": 0.626953125,
+          "prioridade": "VeryHigh"
+        },
+        {
+          "url": "http://localhost:3022/assets/CurvedLoop-DfusgJPQ.js",
+          "tipo": "Script",
+          "kb": 3.501953125,
+          "prioridade": "High"
+        },
+        {
+          "url": "http://localhost:3022/assets/CurvedLoop-BcWzG1NS.css",
+          "tipo": "Stylesheet",
+          "kb": 0.57421875,
+          "prioridade": "VeryHigh"
+        },
+        {
+          "url": "http://localhost:3022/profile-pic-7-96x96.png",
+          "tipo": "Other",
+          "kb": 5.953125,
+          "prioridade": "High"
+        },
+        {
+          "url": "http://localhost:3022/assets/hero-poster-DxnjO1_a.webp",
+          "tipo": "Image",
+          "kb": 33.9248046875,
+          "prioridade": "High"
+        },
+        {
+          "url": "http://localhost:3022/assets/jetbrains-mono-latin-wght-normal-B9CIFXIH.woff2",
+          "tipo": "Font",
+          "kb": 39.7626953125,
+          "prioridade": "VeryHigh"
+        },
+        {
+          "url": "http://localhost:3022/assets/foto-perfil-tKIsezCZ.webp",
+          "tipo": "Image",
+          "kb": 37.7275390625,
+          "prioridade": "Low"
+        }
+      ],
+      "reprovadas": [
+        {
+          "categoria": "performance",
+          "id": "first-contentful-paint",
+          "titulo": "First Contentful Paint",
+          "valor": "2.1 s"
+        },
+        {
+          "categoria": "performance",
+          "id": "largest-contentful-paint",
+          "titulo": "Largest Contentful Paint",
+          "valor": "3.3 s"
+        },
+        {
+          "categoria": "performance",
+          "id": "total-blocking-time",
+          "titulo": "Total Blocking Time",
+          "valor": "280 ms"
+        },
+        {
+          "categoria": "performance",
+          "id": "cache-insight",
+          "titulo": "Use efficient cache lifetimes",
+          "valor": "Est savings of 335 KiB"
+        },
+        {
+          "categoria": "performance",
+          "id": "forced-reflow-insight",
+          "titulo": "Forced reflow",
+          "valor": ""
+        },
+        {
+          "categoria": "performance",
+          "id": "image-delivery-insight",
+          "titulo": "Improve image delivery",
+          "valor": "Est savings of 21 KiB"
+        },
+        {
+          "categoria": "performance",
+          "id": "network-dependency-tree-insight",
+          "titulo": "Network dependency tree",
+          "valor": ""
+        },
+        {
+          "categoria": "performance",
+          "id": "render-blocking-insight",
+          "titulo": "Render-blocking requests",
+          "valor": "Est savings of 300 ms"
+        },
+        {
+          "categoria": "performance",
+          "id": "max-potential-fid",
+          "titulo": "Max Potential First Input Delay",
+          "valor": "300 ms"
+        },
+        {
+          "categoria": "performance",
+          "id": "unused-javascript",
+          "titulo": "Reduce unused JavaScript",
+          "valor": "Est savings of 61 KiB"
+        },
+        {
+          "categoria": "performance",
+          "id": "mainthread-work-breakdown",
+          "titulo": "Minimize main-thread work",
+          "valor": "2.2 s"
+        }
+      ],
+      "navegador": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+      "versao": "13.5.0"
+    },
+    "desktop": {
+      "execucaoMediana": "docs\\relatorios\\etapas\\4-hero-estatico\\etapa4-desktop-2.report.html",
+      "arquivo": "docs\\relatorios\\etapas\\4-hero-estatico\\etapa4-desktop-2.report.html",
+      "performance": 100,
+      "acessibilidade": 100,
+      "boasPraticas": 100,
+      "seo": 100,
+      "fcp": 465.32175000000007,
+      "lcp": 712.3217500000001,
+      "tbt": 14,
+      "cls": 0.0003418828156174612,
+      "si": 529.3302299793525,
+      "pesoKB": 347.26171875,
+      "requisicoes": 19,
+      "trabalhoJsMs": 101.6160000000008,
+      "elementoLcp": "<span class=\"_linhaNome_148bw_155\">",
+      "fasesLcp": [
+        {
+          "fase": "Time to first byte",
+          "ms": 7.06
+        },
+        {
+          "fase": "Element render delay",
+          "ms": 358.398
+        }
+      ],
+      "listaRequisicoes": [
+        {
+          "url": "http://localhost:3022/",
+          "tipo": "Document",
+          "kb": 1.2734375,
+          "prioridade": "VeryHigh"
+        },
+        {
+          "url": "http://localhost:3022/assets/bricolage-grotesque-latin-opsz-normal-Cre6nC2_.woff2",
+          "tipo": "Font",
+          "kb": 75.396484375,
+          "prioridade": "High"
+        },
+        {
+          "url": "http://localhost:3022/assets/index-E8FV5EXf.js",
+          "tipo": "Script",
+          "kb": 122.6708984375,
+          "prioridade": "High"
+        },
+        {
+          "url": "http://localhost:3022/assets/react-DvXU6kJ2.js",
+          "tipo": "Script",
+          "kb": 3.5693359375,
+          "prioridade": "High"
+        },
+        {
+          "url": "http://localhost:3022/assets/jsx-runtime-BOy446NO.js",
+          "tipo": "Script",
+          "kb": 0.7431640625,
+          "prioridade": "High"
+        },
+        {
+          "url": "http://localhost:3022/assets/index-D2Te14PK.css",
+          "tipo": "Stylesheet",
+          "kb": 8.470703125,
+          "prioridade": "VeryHigh"
+        },
+        {
+          "url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter i…",
+          "tipo": "Image",
+          "kb": 0,
+          "prioridade": "Low"
+        },
+        {
+          "url": "http://localhost:3022/assets/TargetCursor-Cn9njnWI.js",
+          "tipo": "Script",
+          "kb": 3.1005859375,
+          "prioridade": "High"
+        },
+        {
+          "url": "http://localhost:3022/assets/TargetCursor-DFmyNgbJ.css",
+          "tipo": "Stylesheet",
+          "kb": 0.89453125,
+          "prioridade": "VeryHigh"
+        },
+        {
+          "url": "http://localhost:3022/assets/ScrollVelocity-Cap0NbR0.js",
+          "tipo": "Script",
+          "kb": 7.1474609375,
+          "prioridade": "High"
+        },
+        {
+          "url": "http://localhost:3022/assets/use-reduced-motion-CCtVKIrI.js",
+          "tipo": "Script",
+          "kb": 0.6953125,
+          "prioridade": "High"
+        },
+        {
+          "url": "http://localhost:3022/assets/ScrollVelocity-C-6PR3f7.css",
+          "tipo": "Stylesheet",
+          "kb": 0.626953125,
+          "prioridade": "VeryHigh"
+        },
+        {
+          "url": "http://localhost:3022/assets/CurvedLoop-DfusgJPQ.js",
+          "tipo": "Script",
+          "kb": 3.501953125,
+          "prioridade": "High"
+        },
+        {
+          "url": "http://localhost:3022/assets/CurvedLoop-BcWzG1NS.css",
+          "tipo": "Stylesheet",
+          "kb": 0.57421875,
+          "prioridade": "VeryHigh"
+        },
+        {
+          "url": "http://localhost:3022/profile-pic-7-96x96.png",
+          "tipo": "Other",
+          "kb": 5.953125,
+          "prioridade": "High"
+        },
+        {
+          "url": "http://localhost:3022/assets/hero-poster-DxnjO1_a.webp",
+          "tipo": "Image",
+          "kb": 33.9248046875,
+          "prioridade": "High"
+        },
+        {
+          "url": "http://localhost:3022/assets/jetbrains-mono-latin-wght-normal-B9CIFXIH.woff2",
+          "tipo": "Font",
+          "kb": 39.7626953125,
+          "prioridade": "VeryHigh"
+        },
+        {
+          "url": "http://localhost:3022/assets/foto-perfil-tKIsezCZ.webp",
+          "tipo": "Image",
+          "kb": 37.7275390625,
+          "prioridade": "Low"
+        },
+        {
+          "url": "http://localhost:3022/assets/todo-nextjs-CjKsiMOd.svg",
+          "tipo": "Image",
+          "kb": 1.228515625,
+          "prioridade": "Low"
+        }
+      ],
+      "reprovadas": [
+        {
+          "categoria": "performance",
+          "id": "cache-insight",
+          "titulo": "Use efficient cache lifetimes",
+          "valor": "Est savings of 340 KiB"
+        },
+        {
+          "categoria": "performance",
+          "id": "image-delivery-insight",
+          "titulo": "Improve image delivery",
+          "valor": "Est savings of 21 KiB"
+        },
+        {
+          "categoria": "performance",
+          "id": "network-dependency-tree-insight",
+          "titulo": "Network dependency tree",
+          "valor": ""
+        },
+        {
+          "categoria": "performance",
+          "id": "render-blocking-insight",
+          "titulo": "Render-blocking requests",
+          "valor": ""
+        },
+        {
+          "categoria": "performance",
+          "id": "unused-javascript",
+          "titulo": "Reduce unused JavaScript",
+          "valor": "Est savings of 60 KiB"
+        }
+      ],
+      "navegador": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+      "versao": "13.5.0"
+    }
+  }
+}

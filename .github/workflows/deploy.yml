@@ -30,6 +30,8 @@ jobs:
 
       - run: npm ci
       - run: npm run lint
+      # Código fora do padrão do Prettier também barra o deploy (corrigir com npm run format)
+      - run: npm run format:check
       # Teste quebrado interrompe o job: nada é publicado
       - run: npm test
 

@@ -21,7 +21,11 @@ export default function Cabecalho() {
   return (
     <header className={`${styles.cabecalho} ${menuAberto ? styles.comMenu : ''}`}>
       <div className={styles.conteudo}>
-        <a href="#inicio" className={`${styles.logo} cursor-target`} aria-label={`${iniciais}: ${perfil.nome}, voltar ao início`}>
+        <a
+          href="#inicio"
+          className={`${styles.logo} cursor-target`}
+          aria-label={`${iniciais}: ${perfil.nome}, voltar ao início`}
+        >
           {iniciais}
           <span className={styles.cursorPiscando} aria-hidden="true">
             _

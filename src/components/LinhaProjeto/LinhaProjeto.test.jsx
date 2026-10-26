@@ -36,9 +36,24 @@ describe('LinhaProjeto', () => {
   })
 
   it('mostra os links de repositório e demo quando existem', () => {
-    render(<LinhaProjeto {...base} repositorio="https://github.com/x/y" demo="https://x.github.io/y" status="Em andamento" />)
+    render(
+      <LinhaProjeto
+        {...base}
+        repositorio="https://github.com/x/y"
+        demo="https://x.github.io/y"
+        status="Em andamento"
+      />,
+    )
     expect(screen.getByRole('link', { name: /repositório/i })).toHaveAttribute('href', 'https://github.com/x/y')
     expect(screen.getByRole('link', { name: /ver online/i })).toHaveAttribute('href', 'https://x.github.io/y')
     expect(screen.getByText('Em andamento')).toBeInTheDocument()
+  })
+
+  it('mostra o link do relatório só quando o projeto tem um', () => {
+    const { rerender } = render(<LinhaProjeto {...base} />)
+    expect(screen.queryByRole('link', { name: /relatório/i })).not.toBeInTheDocument()
+
+    rerender(<LinhaProjeto {...base} relatorio="/relatorio.pdf" />)
+    expect(screen.getByRole('link', { name: /relatório \(pdf\)/i })).toHaveAttribute('href', '/relatorio.pdf')
   })
 })

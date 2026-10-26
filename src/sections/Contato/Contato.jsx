@@ -37,8 +37,8 @@ export default function Contato() {
       <div className={styles.grade}>
         <div className={styles.chamada}>
           <p className={styles.texto}>
-            Está procurando alguém para o seu time ou quer conversar sobre um projeto? Mande uma
-            mensagem ou me encontre nas redes abaixo.
+            Está procurando alguém para o seu time ou quer conversar sobre um projeto? Mande uma mensagem ou me encontre
+            nas redes abaixo.
           </p>
           <p className={styles.disponibilidade}>
             <span>Aberto a:</span> {perfil.disponibilidade.join(' · ')}

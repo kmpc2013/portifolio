@@ -23,4 +23,5 @@ dist-ssr
 *.sln
 *.sw?
 notas.md
+docs/notas.md
 docs/recomendacoes-portfolio.html

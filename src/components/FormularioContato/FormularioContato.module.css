@@ -77,9 +77,30 @@
   background: var(--cor-texto);
 }
 
-.sucesso {
+/* Durante o envio: o botão fica apagado e não aceita novo clique */
+.botao:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+.sucesso,
+.falha {
+  display: block;
   margin: 0;
   font-family: var(--fonte-mono);
   font-size: 0.8rem;
   color: var(--cor-sucesso);
+}
+
+.falha {
+  color: var(--cor-erro);
+}
+
+/* Campo-armadilha anti-spam: existe no formulário, mas ninguém vê */
+.armadilha {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
 }
