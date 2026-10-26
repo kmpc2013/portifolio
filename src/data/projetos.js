@@ -8,8 +8,8 @@ import imgZmapl from '../assets/projetos/zmapl.svg'
 import imgPetStyle from '../assets/projetos/pet-style.svg'
 import imgMicrofrontends from '../assets/projetos/microfrontends.svg'
 
-// Rótulo dos projetos feitos no curso de Front-end da EBAC
-const CURSO = 'Projeto do curso · EBAC'
+// Rótulo dos projetos feitos no curso de Front-end da EBAC (o currículo em PDF deixa esses de fora)
+export const CURSO = 'Projeto do curso · EBAC'
 
 // Cada objeto vira uma <LinhaProjeto>. Para adicionar um projeto, basta incluir um item.
 // repositorio e demo: links externos; repositorio: null mostra "Repositório privado"; demo: null esconde o botão "Ver online".

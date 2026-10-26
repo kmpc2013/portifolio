@@ -18,10 +18,13 @@ export const perfil = {
   email: 'luis.vidio9@gmail.com',
   github: 'https://github.com/kmpc2013',
   linkedin: 'https://www.linkedin.com/in/luis-gustavo-fernandes-99a42910b/',
+  // Endereço público do portfólio: o currículo em PDF aponta para cá
+  site: 'https://kmpc2013.github.io/portifolio/',
   // Endpoint do Formspree que recebe o formulário de contato e encaminha para o e-mail acima.
   // O id é público (fica no HTML de qualquer forma): trocar SEU_ID pelo id do formulário criado no Formspree.
   formulario: 'https://formspree.io/f/xqpppwwn',
-  // Arquivo dentro de public/: o link é montado com o BASE_URL do Vite
+  // Arquivo dentro de public/: o link é montado com o BASE_URL do Vite.
+  // É gerado a partir destes dados por scripts/gerar-curriculo.mjs (roda sozinho antes do build).
   curriculo: 'curriculo-luis-fernandes.pdf',
   // O que procuro: aparece no Início e no Contato
   disponibilidade: ['Infraestrutura/DevOps Sênior', 'Remoto ou híbrido em Joinville', 'CLT ou PJ'],
