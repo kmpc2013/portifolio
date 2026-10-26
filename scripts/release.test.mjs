@@ -35,6 +35,24 @@ describe('proximaVersao', () => {
   it('sobe major quando há quebra de compatibilidade', () => {
     expect(proximaVersao('v2.4.1', [commit('feat!: novo layout')])).toBe('v3.0.0')
   })
+
+  it('não gera release só com docs, ci, chore, test, style e refactor', () => {
+    const tipos = ['docs', 'ci', 'chore', 'test', 'style', 'refactor']
+    expect(
+      proximaVersao(
+        'v2.0.0',
+        tipos.map((t) => commit(`${t}: ajuste`)),
+      ),
+    ).toBeNull()
+  })
+
+  it('gera release quando um desses vem junto de uma mudança real', () => {
+    expect(proximaVersao('v2.0.0', [commit('ci: ajusta pipeline'), commit('perf: comprime imagens')])).toBe('v2.0.1')
+  })
+
+  it('gera release para quebra de compatibilidade mesmo em refactor', () => {
+    expect(proximaVersao('v2.0.0', [commit('refactor!: troca rotas')])).toBe('v3.0.0')
+  })
 })
 
 describe('montarNotas', () => {

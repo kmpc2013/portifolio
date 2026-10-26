@@ -77,11 +77,14 @@ Se o lint, a formatação ou algum teste falhar, nada é publicado.
 
 Depois do deploy, o script [`scripts/release.mjs`](scripts/release.mjs) cria uma release no GitHub com os commits desde a última tag. A versão segue os [Conventional Commits](https://www.conventionalcommits.org/pt-br/):
 
-| Mensagem do commit                                   | Exemplo                         | Versão        |
-| ---------------------------------------------------- | ------------------------------- | ------------- |
-| `feat!:` ou `BREAKING CHANGE` no corpo               | `feat!: novo layout`            | 2.0.0 → 3.0.0 |
-| `feat:`                                              | `feat(projetos): adiciona blog` | 2.0.0 → 2.1.0 |
-| `fix:`, `perf:`, `docs:`, `chore:`... ou sem prefixo | `fix: corrige link do LinkedIn` | 2.0.0 → 2.0.1 |
+| Mensagem do commit                                       | Exemplo                         | Versão        |
+| -------------------------------------------------------- | ------------------------------- | ------------- |
+| `feat!:` ou `BREAKING CHANGE` no corpo                   | `feat!: novo layout`            | 2.0.0 → 3.0.0 |
+| `feat:`                                                  | `feat(projetos): adiciona blog` | 2.0.0 → 2.1.0 |
+| `fix:`, `perf:` ou sem prefixo                           | `fix: corrige link do LinkedIn` | 2.0.0 → 2.0.1 |
+| `docs:`, `ci:`, `chore:`, `test:`, `style:`, `refactor:` | `docs: atualiza README`         | sem release   |
+
+Commits `docs`, `ci`, `chore`, `test`, `style` e `refactor` não mudam o site, então não geram release sozinhos. Eles ficam guardados e entram nas notas da próxima versão que tiver uma mudança real.
 
 As notas são agrupadas em Novidades (`feat`), Correções (`fix`), Desempenho (`perf`) e Outras mudanças. Para conferir antes do push qual versão e quais notas vão sair:
 

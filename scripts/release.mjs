@@ -6,9 +6,12 @@
 // A versão segue os Conventional Commits:
 //   feat!: ... ou "BREAKING CHANGE" no corpo  -> major (2.0.0 -> 3.0.0)
 //   feat: ...                                 -> minor (2.0.0 -> 2.1.0)
-//   qualquer outro commit, com ou sem prefixo -> patch (2.0.0 -> 2.0.1)
+//   fix:, perf:, outros tipos ou sem prefixo  -> patch (2.0.0 -> 2.0.1)
 //
-// No GitHub Actions, a versão sai em GITHUB_OUTPUT (versao=v2.1.0). Sem commits novos, não sai nada.
+// docs, ci, chore, test, style e refactor não geram release sozinhos: como a tag não avança,
+// eles entram nas notas da próxima versão que tiver uma mudança real.
+//
+// No GitHub Actions, a versão sai em GITHUB_OUTPUT (versao=v2.1.0). Sem release a criar, não sai nada.
 // Fora do Actions, só imprime a versão e as notas: serve para conferir antes de dar push.
 import { execFileSync } from 'node:child_process'
 import { appendFileSync, writeFileSync } from 'node:fs'
@@ -22,6 +25,9 @@ const SECOES = [
 ]
 const OUTRAS = 'Outras mudanças'
 
+// Tipos que não mudam o site publicado: só entram de carona na próxima release
+const SEM_RELEASE = ['docs', 'ci', 'chore', 'test', 'style', 'refactor']
+
 // "feat(contato)!: valida e-mail" -> { tipo: 'feat', escopo: 'contato', quebra: true, descricao: 'valida e-mail' }
 export function lerCommit({ hash, assunto, corpo = '' }) {
   const partes = assunto.match(/^(\w+)(?:\(([^)]+)\))?(!)?:\s*(.+)$/)
@@ -30,7 +36,14 @@ export function lerCommit({ hash, assunto, corpo = '' }) {
   return { hash, tipo: partes[1].toLowerCase(), escopo: partes[2] ?? null, quebra, descricao: partes[4] }
 }
 
+// Quebra de compatibilidade sempre gera release, mesmo vinda de um refactor!
+export function geraRelease(commits) {
+  return commits.some((c) => c.quebra || !SEM_RELEASE.includes(c.tipo))
+}
+
+// null quando nenhum commit gera release
 export function proximaVersao(atual, commits) {
+  if (!geraRelease(commits)) return null
   const [major, minor, patch] = atual.replace(/^v/, '').split('.').map(Number)
   if (commits.some((c) => c.quebra)) return `v${major + 1}.0.0`
   if (commits.some((c) => c.tipo === 'feat')) return `v${major}.${minor + 1}.0`
@@ -105,6 +118,10 @@ function principal() {
   }
 
   const versao = proximaVersao(anterior ?? 'v0.0.0', commits)
+  if (!versao) {
+    console.log(`${commits.length} commits desde ${anterior}, nenhum de feat/fix/perf: ficam para a próxima release.`)
+    return
+  }
   const { GITHUB_SERVER_URL, GITHUB_REPOSITORY, GITHUB_OUTPUT, SITE_URL } = process.env
   const repositorio = GITHUB_REPOSITORY ? `${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}` : null
   const notas = montarNotas({ commits, anterior, versao, repositorio, site: SITE_URL })
