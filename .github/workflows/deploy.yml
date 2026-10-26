@@ -48,6 +48,36 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    outputs:
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  # Só cria a release depois que o site está no ar: versão e notas saem dos commits desde a última tag
+  release:
+    needs: deploy
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Histórico e tags completos, para achar a última versão e listar os commits desde ela
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - id: versao
+        run: node scripts/release.mjs notas-release.md
+        env:
+          SITE_URL: ${{ needs.deploy.outputs.url }}
+
+      # Sem commits novos (ex.: workflow rodado de novo à mão), o script não define versão e nada é publicado
+      - if: steps.versao.outputs.versao
+        run: gh release create "$VERSAO" --target "$GITHUB_SHA" --title "$VERSAO" --notes-file notas-release.md
+        env:
+          VERSAO: ${{ steps.versao.outputs.versao }}
+          GH_TOKEN: ${{ github.token }}

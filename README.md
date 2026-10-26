@@ -68,10 +68,28 @@ npm run preview
 O workflow [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) roda a cada push na `main`:
 
 ```
-npm ci → lint → formatação → testes → build → deploy no GitHub Pages
+npm ci → lint → formatação → testes → build → deploy no GitHub Pages → release
 ```
 
 Se o lint, a formatação ou algum teste falhar, nada é publicado.
+
+### Releases
+
+Depois do deploy, o script [`scripts/release.mjs`](scripts/release.mjs) cria uma release no GitHub com os commits desde a última tag. A versão segue os [Conventional Commits](https://www.conventionalcommits.org/pt-br/):
+
+| Mensagem do commit                                   | Exemplo                         | Versão        |
+| ---------------------------------------------------- | ------------------------------- | ------------- |
+| `feat!:` ou `BREAKING CHANGE` no corpo               | `feat!: novo layout`            | 2.0.0 → 3.0.0 |
+| `feat:`                                              | `feat(projetos): adiciona blog` | 2.0.0 → 2.1.0 |
+| `fix:`, `perf:`, `docs:`, `chore:`... ou sem prefixo | `fix: corrige link do LinkedIn` | 2.0.0 → 2.0.1 |
+
+As notas são agrupadas em Novidades (`feat`), Correções (`fix`), Desempenho (`perf`) e Outras mudanças. Para conferir antes do push qual versão e quais notas vão sair:
+
+```bash
+node scripts/release.mjs notas-release.md
+```
+
+A versão do `package.json` não é atualizada pelo CI. A versão oficial é a da tag.
 
 ## Desempenho e acessibilidade
 
