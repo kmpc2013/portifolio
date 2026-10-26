@@ -20,7 +20,7 @@ export const perfil = {
   linkedin: 'https://www.linkedin.com/in/luis-gustavo-fernandes-99a42910b/',
   // Endpoint do Formspree que recebe o formulário de contato e encaminha para o e-mail acima.
   // O id é público (fica no HTML de qualquer forma): trocar SEU_ID pelo id do formulário criado no Formspree.
-  formulario: 'https://formspree.io/f/SEU_ID',
+  formulario: 'https://formspree.io/f/xqpppwwn',
   // Arquivo dentro de public/: o link é montado com o BASE_URL do Vite
   curriculo: 'curriculo-luis-fernandes.pdf',
   // O que procuro: aparece no Início e no Contato
